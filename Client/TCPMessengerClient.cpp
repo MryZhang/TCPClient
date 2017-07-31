@@ -51,7 +51,7 @@ void TCPMessengerClient::login_or_register() {
 }
 
 void TCPMessengerClient::send(int cmd, string msg) {
-    cout << "login register" << endl << flush;
+    cout << "sending messagec"<< endl << flush;
     TCPMessengerProtocol::sendToServer(cmd, msg, sock);
 }
 
