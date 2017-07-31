@@ -6,12 +6,6 @@ set(CMAKE_CXX_STANDARD 11)
 set(SOURCE_FILES
         Client/TCPMessengerClient.cpp
         Client/TCPMessengerClient.h
-        Server/Broker.cpp
-        Server/Broker.h
-        Server/Dispatcher.cpp
-        Server/Dispatcher.h
-        Server/TCPMessengerServer.cpp
-        Server/TCPMessengerServer.h
         utils/File.cpp
         utils/File.h
         utils/FileInterface.cpp
@@ -25,7 +19,6 @@ set(SOURCE_FILES
         utils/TCPMessengerProtocol.h
         utils/TCPSocket.cpp
         utils/TCPSocket.h
-        client_main.cpp
-        server_main.cpp)
+        client_main.cpp)
 
 add_executable(client ${SOURCE_FILES})

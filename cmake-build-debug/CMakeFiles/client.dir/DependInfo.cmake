@@ -5,11 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/c/Users/omrih/ClionProjects/client/Client/TCPMessengerClient.cpp" "/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles/client.dir/Client/TCPMessengerClient.cpp.o"
-  "/cygdrive/c/Users/omrih/ClionProjects/client/Server/Broker.cpp" "/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles/client.dir/Server/Broker.cpp.o"
-  "/cygdrive/c/Users/omrih/ClionProjects/client/Server/Dispatcher.cpp" "/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles/client.dir/Server/Dispatcher.cpp.o"
-  "/cygdrive/c/Users/omrih/ClionProjects/client/Server/TCPMessengerServer.cpp" "/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles/client.dir/Server/TCPMessengerServer.cpp.o"
   "/cygdrive/c/Users/omrih/ClionProjects/client/client_main.cpp" "/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles/client.dir/client_main.cpp.o"
-  "/cygdrive/c/Users/omrih/ClionProjects/client/server_main.cpp" "/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles/client.dir/server_main.cpp.o"
   "/cygdrive/c/Users/omrih/ClionProjects/client/utils/File.cpp" "/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles/client.dir/utils/File.cpp.o"
   "/cygdrive/c/Users/omrih/ClionProjects/client/utils/FileInterface.cpp" "/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles/client.dir/utils/FileInterface.cpp.o"
   "/cygdrive/c/Users/omrih/ClionProjects/client/utils/MThread.cpp" "/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles/client.dir/utils/MThread.cpp.o"

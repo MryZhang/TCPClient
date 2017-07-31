@@ -150,87 +150,6 @@ Client/TCPMessengerClient.cpp.s:
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/Client/TCPMessengerClient.cpp.s
 .PHONY : Client/TCPMessengerClient.cpp.s
 
-Server/Broker.o: Server/Broker.cpp.o
-
-.PHONY : Server/Broker.o
-
-# target to build an object file
-Server/Broker.cpp.o:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/Server/Broker.cpp.o
-.PHONY : Server/Broker.cpp.o
-
-Server/Broker.i: Server/Broker.cpp.i
-
-.PHONY : Server/Broker.i
-
-# target to preprocess a source file
-Server/Broker.cpp.i:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/Server/Broker.cpp.i
-.PHONY : Server/Broker.cpp.i
-
-Server/Broker.s: Server/Broker.cpp.s
-
-.PHONY : Server/Broker.s
-
-# target to generate assembly for a file
-Server/Broker.cpp.s:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/Server/Broker.cpp.s
-.PHONY : Server/Broker.cpp.s
-
-Server/Dispatcher.o: Server/Dispatcher.cpp.o
-
-.PHONY : Server/Dispatcher.o
-
-# target to build an object file
-Server/Dispatcher.cpp.o:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/Server/Dispatcher.cpp.o
-.PHONY : Server/Dispatcher.cpp.o
-
-Server/Dispatcher.i: Server/Dispatcher.cpp.i
-
-.PHONY : Server/Dispatcher.i
-
-# target to preprocess a source file
-Server/Dispatcher.cpp.i:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/Server/Dispatcher.cpp.i
-.PHONY : Server/Dispatcher.cpp.i
-
-Server/Dispatcher.s: Server/Dispatcher.cpp.s
-
-.PHONY : Server/Dispatcher.s
-
-# target to generate assembly for a file
-Server/Dispatcher.cpp.s:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/Server/Dispatcher.cpp.s
-.PHONY : Server/Dispatcher.cpp.s
-
-Server/TCPMessengerServer.o: Server/TCPMessengerServer.cpp.o
-
-.PHONY : Server/TCPMessengerServer.o
-
-# target to build an object file
-Server/TCPMessengerServer.cpp.o:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/Server/TCPMessengerServer.cpp.o
-.PHONY : Server/TCPMessengerServer.cpp.o
-
-Server/TCPMessengerServer.i: Server/TCPMessengerServer.cpp.i
-
-.PHONY : Server/TCPMessengerServer.i
-
-# target to preprocess a source file
-Server/TCPMessengerServer.cpp.i:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/Server/TCPMessengerServer.cpp.i
-.PHONY : Server/TCPMessengerServer.cpp.i
-
-Server/TCPMessengerServer.s: Server/TCPMessengerServer.cpp.s
-
-.PHONY : Server/TCPMessengerServer.s
-
-# target to generate assembly for a file
-Server/TCPMessengerServer.cpp.s:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/Server/TCPMessengerServer.cpp.s
-.PHONY : Server/TCPMessengerServer.cpp.s
-
 client_main.o: client_main.cpp.o
 
 .PHONY : client_main.o
@@ -257,33 +176,6 @@ client_main.s: client_main.cpp.s
 client_main.cpp.s:
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client_main.cpp.s
 .PHONY : client_main.cpp.s
-
-server_main.o: server_main.cpp.o
-
-.PHONY : server_main.o
-
-# target to build an object file
-server_main.cpp.o:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/server_main.cpp.o
-.PHONY : server_main.cpp.o
-
-server_main.i: server_main.cpp.i
-
-.PHONY : server_main.i
-
-# target to preprocess a source file
-server_main.cpp.i:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/server_main.cpp.i
-.PHONY : server_main.cpp.i
-
-server_main.s: server_main.cpp.s
-
-.PHONY : server_main.s
-
-# target to generate assembly for a file
-server_main.cpp.s:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/server_main.cpp.s
-.PHONY : server_main.cpp.s
 
 utils/File.o: utils/File.cpp.o
 
@@ -459,21 +351,9 @@ help:
 	@echo "... Client/TCPMessengerClient.o"
 	@echo "... Client/TCPMessengerClient.i"
 	@echo "... Client/TCPMessengerClient.s"
-	@echo "... Server/Broker.o"
-	@echo "... Server/Broker.i"
-	@echo "... Server/Broker.s"
-	@echo "... Server/Dispatcher.o"
-	@echo "... Server/Dispatcher.i"
-	@echo "... Server/Dispatcher.s"
-	@echo "... Server/TCPMessengerServer.o"
-	@echo "... Server/TCPMessengerServer.i"
-	@echo "... Server/TCPMessengerServer.s"
 	@echo "... client_main.o"
 	@echo "... client_main.i"
 	@echo "... client_main.s"
-	@echo "... server_main.o"
-	@echo "... server_main.i"
-	@echo "... server_main.s"
 	@echo "... utils/File.o"
 	@echo "... utils/File.i"
 	@echo "... utils/File.s"

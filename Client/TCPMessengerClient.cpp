@@ -33,7 +33,26 @@ void TCPMessengerClient::openSession(const string& ipAndPort) {
 void TCPMessengerClient::send(const string msg) {
     cout << "sending msg to server" << msg << endl << flush;
     TCPMessengerProtocol::sendToServer(SEND_MSG_TO_PEER, msg, sock);
+}
 
+void TCPMessengerClient::login_or_register() {
+    string msg;
+    msg.clear();
+    //selection - 1-login 2-register
+    cin >> msg;
+    TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
+    //username
+    cin >> msg;
+    TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
+    //password
+    cin >> msg;
+    TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
+
+}
+
+void TCPMessengerClient::send(int cmd, string msg) {
+    cout << "login register" << endl << flush;
+    TCPMessengerProtocol::sendToServer(cmd, msg, sock);
 }
 
 void TCPMessengerClient::closeSession() {

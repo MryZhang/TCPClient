@@ -86,28 +86,7 @@
 		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/Client/TCPMessengerClient.h">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/Server/Broker.cpp">
-			<Option target="client"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/Server/Broker.h">
-			<Option target="client"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/Server/Dispatcher.cpp">
-			<Option target="client"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/Server/Dispatcher.h">
-			<Option target="client"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/Server/TCPMessengerServer.cpp">
-			<Option target="client"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/Server/TCPMessengerServer.h">
-			<Option target="client"/>
-		</Unit>
 		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/client_main.cpp">
-			<Option target="client"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/server_main.cpp">
 			<Option target="client"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/utils/File.cpp">

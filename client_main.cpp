@@ -22,7 +22,7 @@ int main() {
 
     cout << "Welcome to TCP Client messenger" << endl;
     TCPMessengerClient* client = new TCPMessengerClient();
-    //printInstructions();
+    printInstructions();
     while (true) {
         string msg;
         msg.clear();
@@ -31,12 +31,14 @@ int main() {
         cin >> command;
 
         if (command == "c") {
-            string ip;
-            cin >> ip;
-            getline(std::cin, msg);
-            if (msg.size() > 0 && msg[0] == ' ')
-                msg.erase(0, 1);
-            client->connect(ip);
+//            string ip;
+//            cin >> ip;
+//            getline(std::cin, msg);
+//            if (msg.size() > 0 && msg[0] == ' ')
+//                msg.erase(0, 1);
+//            client->connect(ip);
+            client->connect("127.0.0.1");
+            client->login_or_register();
         } else if (command == "o") {
             string ipAndPort;
             cin >> ipAndPort;

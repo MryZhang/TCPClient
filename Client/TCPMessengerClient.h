@@ -27,6 +27,8 @@ namespace npl {
         void connect(const string& ip);
         void openSession(const string& ipAndPort);
         void send(const string msg);
+        void login_or_register();
+        void send (int cmd , string msg);
         void closeSession();
         void disconnect();
 
