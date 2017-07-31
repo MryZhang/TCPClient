@@ -14,6 +14,8 @@
     <list default="true" id="9137cc89-0da1-4046-a54d-50465ec549a7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/TCPMessengerClient.cpp" afterPath="$PROJECT_DIR$/Client/TCPMessengerClient.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/TCPMessengerClient.h" afterPath="$PROJECT_DIR$/Client/TCPMessengerClient.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/TCPMessengerProtocol.h" afterPath="$PROJECT_DIR$/utils/TCPMessengerProtocol.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +31,8 @@
       <file leaf-file-name="client_main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client_main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="40" column="40" lean-forward="false" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+            <state relative-caret-position="137">
+              <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
               <folding>
                 <element signature="e#41#79#0" expanded="true" />
               </folding>
@@ -61,8 +63,8 @@
       <file leaf-file-name="TCPMessengerClient.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Client/TCPMessengerClient.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="53" column="30" lean-forward="false" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+            <state relative-caret-position="215">
+              <caret line="73" column="11" lean-forward="false" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="11" />
               <folding>
                 <element signature="e#40#71#0" expanded="true" />
               </folding>
@@ -73,11 +75,21 @@
       <file leaf-file-name="TCPMessengerClient.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/TCPMessengerClient.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+            <state relative-caret-position="204">
+              <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
               <folding>
                 <element signature="e#119#138#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TCPMessengerProtocol.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/TCPMessengerProtocol.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -130,8 +142,8 @@
         <option value="$PROJECT_DIR$/server/Dispatcher.cpp" />
         <option value="$PROJECT_DIR$/server_main.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/utils/TCPMessengerProtocol.h" />
         <option value="$PROJECT_DIR$/client_main.cpp" />
+        <option value="$PROJECT_DIR$/utils/TCPMessengerProtocol.h" />
         <option value="$PROJECT_DIR$/Client/TCPMessengerClient.h" />
         <option value="$PROJECT_DIR$/Client/TCPMessengerClient.cpp" />
       </list>
@@ -447,7 +459,7 @@
       <workItem from="1501425866450" duration="823000" />
       <workItem from="1501426886990" duration="796000" />
       <workItem from="1501428406527" duration="682000" />
-      <workItem from="1501500247390" duration="9347000" />
+      <workItem from="1501500247390" duration="14665000" />
     </task>
     <task id="LOCAL-00001" summary="user registration">
       <created>1501507803422</created>
@@ -463,21 +475,28 @@
       <option name="project" value="LOCAL" />
       <updated>1501511488748</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="user LOGIN">
+      <created>1501511502302</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1501511502302</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37815000" />
+    <option name="totallyTimeSpent" value="43133000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14421669" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2035139" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53943217" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3154574" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47160885" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45741326" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -502,7 +521,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="user registration" />
     <MESSAGE value="user LOGIN" />
-    <option name="LAST_COMMIT_MESSAGE" value="user LOGIN" />
+    <MESSAGE value="users login is working - one bug need to press enter twice after login" />
+    <option name="LAST_COMMIT_MESSAGE" value="users login is working - one bug need to press enter twice after login" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -514,7 +534,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Client/TCPMessengerClient.cpp</url>
-          <line>53</line>
+          <line>55</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
@@ -816,14 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/TCPMessengerProtocol.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-376">
-          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/cygwin64/usr/src/debug/gcc-5.4.0-1/libstdc++-v3/include/bits/basic_string.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -834,18 +846,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/TCPMessengerClient.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        <state relative-caret-position="204">
+          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding>
             <element signature="e#119#138#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/utils/TCPMessengerProtocol.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client_main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="40" column="40" lean-forward="false" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+        <state relative-caret-position="137">
+          <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
           <folding>
             <element signature="e#41#79#0" expanded="true" />
           </folding>
@@ -854,8 +874,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/TCPMessengerClient.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="53" column="30" lean-forward="false" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+        <state relative-caret-position="215">
+          <caret line="73" column="11" lean-forward="false" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="11" />
           <folding>
             <element signature="e#40#71#0" expanded="true" />
           </folding>

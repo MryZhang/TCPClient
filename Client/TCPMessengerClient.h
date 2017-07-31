@@ -22,6 +22,7 @@ namespace npl {
     class TCPMessengerClient :public MThread{
         TCPSocket* sock;
         bool stopRun ;
+        bool isConnected = false;
     public:
         TCPMessengerClient();
         void connect(const string& ip);

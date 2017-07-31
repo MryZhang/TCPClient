@@ -41,12 +41,14 @@ void TCPMessengerClient::login_or_register() {
     //selection - 1-login 2-register
     cin >> msg;
     TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
-    //username
-    cin >> msg;
-    TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
-    //password
-    cin >> msg;
-    TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
+    while (!this->isConnected){
+        //username
+        cin >> msg;
+        TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
+        //password
+        cin >> msg;
+        TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
+    }
 
 }
 
@@ -74,6 +76,9 @@ void TCPMessengerClient::run(){
         TCPMessengerProtocol::readFromServer(command,data,sock);
         switch (command){
             case SESSION_REFUSED:
+                break;
+            case SUCCESS:
+                this->isConnected = true;
                 break;
         }
     }
