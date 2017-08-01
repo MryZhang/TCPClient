@@ -177,28 +177,28 @@ CMakeFiles/client.dir/utils/MultipleTCPSocketListener.cpp.o.provides: CMakeFiles
 CMakeFiles/client.dir/utils/MultipleTCPSocketListener.cpp.o.provides.build: CMakeFiles/client.dir/utils/MultipleTCPSocketListener.cpp.o
 
 
-CMakeFiles/client.dir/utils/UDPMessenger.cpp.o: CMakeFiles/client.dir/flags.make
-CMakeFiles/client.dir/utils/UDPMessenger.cpp.o: ../utils/UDPMessenger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/client.dir/utils/UDPMessenger.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/utils/UDPMessenger.cpp.o -c /cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPMessenger.cpp
+CMakeFiles/client.dir/utils/UDPGame.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/utils/UDPGame.cpp.o: ../utils/UDPGame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/client.dir/utils/UDPGame.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/utils/UDPGame.cpp.o -c /cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPGame.cpp
 
-CMakeFiles/client.dir/utils/UDPMessenger.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/utils/UDPMessenger.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPMessenger.cpp > CMakeFiles/client.dir/utils/UDPMessenger.cpp.i
+CMakeFiles/client.dir/utils/UDPGame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/utils/UDPGame.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPGame.cpp > CMakeFiles/client.dir/utils/UDPGame.cpp.i
 
-CMakeFiles/client.dir/utils/UDPMessenger.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/utils/UDPMessenger.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPMessenger.cpp -o CMakeFiles/client.dir/utils/UDPMessenger.cpp.s
+CMakeFiles/client.dir/utils/UDPGame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/utils/UDPGame.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPGame.cpp -o CMakeFiles/client.dir/utils/UDPGame.cpp.s
 
-CMakeFiles/client.dir/utils/UDPMessenger.cpp.o.requires:
+CMakeFiles/client.dir/utils/UDPGame.cpp.o.requires:
 
-.PHONY : CMakeFiles/client.dir/utils/UDPMessenger.cpp.o.requires
+.PHONY : CMakeFiles/client.dir/utils/UDPGame.cpp.o.requires
 
-CMakeFiles/client.dir/utils/UDPMessenger.cpp.o.provides: CMakeFiles/client.dir/utils/UDPMessenger.cpp.o.requires
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/UDPMessenger.cpp.o.provides.build
-.PHONY : CMakeFiles/client.dir/utils/UDPMessenger.cpp.o.provides
+CMakeFiles/client.dir/utils/UDPGame.cpp.o.provides: CMakeFiles/client.dir/utils/UDPGame.cpp.o.requires
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/UDPGame.cpp.o.provides.build
+.PHONY : CMakeFiles/client.dir/utils/UDPGame.cpp.o.provides
 
-CMakeFiles/client.dir/utils/UDPMessenger.cpp.o.provides.build: CMakeFiles/client.dir/utils/UDPMessenger.cpp.o
+CMakeFiles/client.dir/utils/UDPGame.cpp.o.provides.build: CMakeFiles/client.dir/utils/UDPGame.cpp.o
 
 
 CMakeFiles/client.dir/utils/UDPSocket.cpp.o: CMakeFiles/client.dir/flags.make
@@ -304,7 +304,7 @@ client_OBJECTS = \
 "CMakeFiles/client.dir/utils/FileInterface.cpp.o" \
 "CMakeFiles/client.dir/utils/MThread.cpp.o" \
 "CMakeFiles/client.dir/utils/MultipleTCPSocketListener.cpp.o" \
-"CMakeFiles/client.dir/utils/UDPMessenger.cpp.o" \
+"CMakeFiles/client.dir/utils/UDPGame.cpp.o" \
 "CMakeFiles/client.dir/utils/UDPSocket.cpp.o" \
 "CMakeFiles/client.dir/utils/Socket.cpp.o" \
 "CMakeFiles/client.dir/utils/TCPSocket.cpp.o" \
@@ -318,7 +318,7 @@ client.exe: CMakeFiles/client.dir/utils/File.cpp.o
 client.exe: CMakeFiles/client.dir/utils/FileInterface.cpp.o
 client.exe: CMakeFiles/client.dir/utils/MThread.cpp.o
 client.exe: CMakeFiles/client.dir/utils/MultipleTCPSocketListener.cpp.o
-client.exe: CMakeFiles/client.dir/utils/UDPMessenger.cpp.o
+client.exe: CMakeFiles/client.dir/utils/UDPGame.cpp.o
 client.exe: CMakeFiles/client.dir/utils/UDPSocket.cpp.o
 client.exe: CMakeFiles/client.dir/utils/Socket.cpp.o
 client.exe: CMakeFiles/client.dir/utils/TCPSocket.cpp.o
@@ -338,7 +338,7 @@ CMakeFiles/client.dir/requires: CMakeFiles/client.dir/utils/File.cpp.o.requires
 CMakeFiles/client.dir/requires: CMakeFiles/client.dir/utils/FileInterface.cpp.o.requires
 CMakeFiles/client.dir/requires: CMakeFiles/client.dir/utils/MThread.cpp.o.requires
 CMakeFiles/client.dir/requires: CMakeFiles/client.dir/utils/MultipleTCPSocketListener.cpp.o.requires
-CMakeFiles/client.dir/requires: CMakeFiles/client.dir/utils/UDPMessenger.cpp.o.requires
+CMakeFiles/client.dir/requires: CMakeFiles/client.dir/utils/UDPGame.cpp.o.requires
 CMakeFiles/client.dir/requires: CMakeFiles/client.dir/utils/UDPSocket.cpp.o.requires
 CMakeFiles/client.dir/requires: CMakeFiles/client.dir/utils/Socket.cpp.o.requires
 CMakeFiles/client.dir/requires: CMakeFiles/client.dir/utils/TCPSocket.cpp.o.requires

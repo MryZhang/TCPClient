@@ -339,32 +339,32 @@ utils/TCPSocket.cpp.s:
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/TCPSocket.cpp.s
 .PHONY : utils/TCPSocket.cpp.s
 
-utils/UDPMessenger.o: utils/UDPMessenger.cpp.o
+utils/UDPGame.o: utils/UDPGame.cpp.o
 
-.PHONY : utils/UDPMessenger.o
+.PHONY : utils/UDPGame.o
 
 # target to build an object file
-utils/UDPMessenger.cpp.o:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/UDPMessenger.cpp.o
-.PHONY : utils/UDPMessenger.cpp.o
+utils/UDPGame.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/UDPGame.cpp.o
+.PHONY : utils/UDPGame.cpp.o
 
-utils/UDPMessenger.i: utils/UDPMessenger.cpp.i
+utils/UDPGame.i: utils/UDPGame.cpp.i
 
-.PHONY : utils/UDPMessenger.i
+.PHONY : utils/UDPGame.i
 
 # target to preprocess a source file
-utils/UDPMessenger.cpp.i:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/UDPMessenger.cpp.i
-.PHONY : utils/UDPMessenger.cpp.i
+utils/UDPGame.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/UDPGame.cpp.i
+.PHONY : utils/UDPGame.cpp.i
 
-utils/UDPMessenger.s: utils/UDPMessenger.cpp.s
+utils/UDPGame.s: utils/UDPGame.cpp.s
 
-.PHONY : utils/UDPMessenger.s
+.PHONY : utils/UDPGame.s
 
 # target to generate assembly for a file
-utils/UDPMessenger.cpp.s:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/UDPMessenger.cpp.s
-.PHONY : utils/UDPMessenger.cpp.s
+utils/UDPGame.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/UDPGame.cpp.s
+.PHONY : utils/UDPGame.cpp.s
 
 utils/UDPSocket.o: utils/UDPSocket.cpp.o
 
@@ -426,9 +426,9 @@ help:
 	@echo "... utils/TCPSocket.o"
 	@echo "... utils/TCPSocket.i"
 	@echo "... utils/TCPSocket.s"
-	@echo "... utils/UDPMessenger.o"
-	@echo "... utils/UDPMessenger.i"
-	@echo "... utils/UDPMessenger.s"
+	@echo "... utils/UDPGame.o"
+	@echo "... utils/UDPGame.i"
+	@echo "... utils/UDPGame.s"
 	@echo "... utils/UDPSocket.o"
 	@echo "... utils/UDPSocket.i"
 	@echo "... utils/UDPSocket.s"

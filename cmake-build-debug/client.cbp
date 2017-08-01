@@ -128,10 +128,10 @@
 		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/utils/TCPSocket.h">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPMessenger.cpp">
+		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPGame.cpp">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPMessenger.h">
+		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPGame.h">
 			<Option target="client"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPSocket.cpp">

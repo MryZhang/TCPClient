@@ -1,9 +1,9 @@
-#include "UDPMessenger.h"
+#include "UDPGame.h"
 
 
 using namespace npl;
 
-void UDPMessenger::run() {
+void UDPGAME::run() {
 	// receiver thread...
 	while (runing) {
 		char buffer[1024];
@@ -18,22 +18,23 @@ void UDPMessenger::run() {
 
 }
 
-UDPMessenger::UDPMessenger() {
+UDPGAME::UDPGAME(string ip) {
 	// init the messenger
-	udpSocket = new UDPSocket(MSNGR_PORT);
+	udpSocket = new UDPSocket(GAME_PORT);
 	runing = true;
+    sendtoip = ip;
 	this->start();
 }
 
-void UDPMessenger::sendTo(const string& msg, const string& ip) {
-	udpSocket->sendTo(msg, ip, MSNGR_PORT);
+void UDPGAME::sendTo(const string& msg) {
+	udpSocket->sendTo(msg, sendtoip, GAME_PORT);
 }
 
-void UDPMessenger::reply(const string& msg) {
+void UDPGAME::reply(const string& msg) {
 	udpSocket->reply(msg);
 }
 
-void UDPMessenger::close() {
+void UDPGAME::close() {
 	runing = false;
 	udpSocket->close();
 	waitForThread();

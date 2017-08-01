@@ -80,6 +80,10 @@ void TCPMessengerClient::run(){
             case SUCCESS:
                 this->isConnected = true;
                 break;
+            case GAME_SESSION:
+                UDPGAME * udpgame = new UDPGAME(data);
+                udpgame->start();
+                break;
         }
     }
     cout<< "stop receiving data"<<endl;

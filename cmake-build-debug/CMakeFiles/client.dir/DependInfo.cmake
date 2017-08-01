@@ -12,7 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/c/Users/omrih/ClionProjects/client/utils/MultipleTCPSocketListener.cpp" "/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles/client.dir/utils/MultipleTCPSocketListener.cpp.o"
   "/cygdrive/c/Users/omrih/ClionProjects/client/utils/Socket.cpp" "/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles/client.dir/utils/Socket.cpp.o"
   "/cygdrive/c/Users/omrih/ClionProjects/client/utils/TCPSocket.cpp" "/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles/client.dir/utils/TCPSocket.cpp.o"
-  "/cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPMessenger.cpp" "/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles/client.dir/utils/UDPMessenger.cpp.o"
+  "/cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPGame.cpp" "/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles/client.dir/utils/UDPGame.cpp.o"
   "/cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPSocket.cpp" "/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles/client.dir/utils/UDPSocket.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
