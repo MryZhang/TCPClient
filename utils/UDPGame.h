@@ -14,7 +14,7 @@ namespace npl {
         string sendtoip;
 
     public:
-        UDPGAME(string ip);
+        UDPGAME(string ip , bool * flag);
 
         /**
          * sends the given message to the given peer specified by IP

@@ -74,6 +74,7 @@ void TCPMessengerClient::run(){
     stopRun = true;
     while(stopRun){
         TCPMessengerProtocol::readFromServer(command,data,sock);
+        cout << "command ***** >>>> " << command << endl;
         switch (command){
             case SESSION_REFUSED:
                 break;
@@ -81,8 +82,14 @@ void TCPMessengerClient::run(){
                 this->isConnected = true;
                 break;
             case GAME_SESSION:
-                UDPGAME * udpgame = new UDPGAME(data);
+                bool flag = true;
+                UDPGAME * udpgame = new UDPGAME(data , &flag);
                 udpgame->start();
+                while (flag){
+                    string msg;
+                    cin >> msg;
+                    udpgame->sendTo(msg);
+                }
                 break;
         }
     }

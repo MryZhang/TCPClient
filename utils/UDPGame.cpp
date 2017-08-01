@@ -13,12 +13,13 @@ void UDPGAME::run() {
 		}
 		buffer[n] = '\0';
 		cout<<endl<<"the msg--->"<< buffer<<endl;
+
 	}
 	cout << "closing receiver thread" << endl;
 
 }
 
-UDPGAME::UDPGAME(string ip) {
+UDPGAME::UDPGAME(string ip , bool * flag) {
 	// init the messenger
 	udpSocket = new UDPSocket(GAME_PORT);
 	runing = true;
