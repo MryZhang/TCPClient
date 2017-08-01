@@ -134,6 +134,12 @@
 		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPMessenger.h">
 			<Option target="client"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPSocket.cpp">
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPSocket.h">
+			<Option target="client"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/client/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

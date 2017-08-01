@@ -12,25 +12,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9137cc89-0da1-4046-a54d-50465ec549a7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/UDPMessenger.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/UDPMessenger.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/UDPSocket.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/UDPSocket.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/TCPMessengerClient.cpp" afterPath="$PROJECT_DIR$/Client/TCPMessengerClient.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/TCPMessengerClient.h" afterPath="$PROJECT_DIR$/Client/TCPMessengerClient.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client_main.cpp" afterPath="$PROJECT_DIR$/client_main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/DependInfo.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/build.make" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/cmake_clean.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/link.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/client.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/client.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/TCPMessengerProtocol.h" afterPath="$PROJECT_DIR$/utils/TCPMessengerProtocol.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,7 +42,9 @@
             <state relative-caret-position="238">
               <caret line="54" column="33" lean-forward="false" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
               <folding>
-                <element signature="e#41#79#0" expanded="true" />
+                <marker date="1501611704079" expanded="true" signature="50:157" ph="..." />
+                <marker date="1501611704079" expanded="true" signature="226:579" ph="{...}" />
+                <marker date="1501611704079" expanded="true" signature="592:2020" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -59,7 +55,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-255">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1501612721518" expanded="true" signature="75:330" ph="{...}" />
+                <marker date="1501612721518" expanded="true" signature="361:459" ph="{...}" />
+                <marker date="1501612721518" expanded="true" signature="524:568" ph="{...}" />
+                <marker date="1501612721518" expanded="true" signature="614:641" ph="{...}" />
+                <marker date="1501612721518" expanded="true" signature="670:767" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,9 +69,46 @@
       <file leaf-file-name="UDPMessenger.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/UDPMessenger.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="221">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <marker date="1501612721418" expanded="true" signature="101:835" ph="{...}" />
+                <marker date="1501612721418" expanded="true" signature="139:832" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TCPMessengerProtocol.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/TCPMessengerProtocol.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="55" column="16" lean-forward="false" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+              <folding>
+                <marker date="1501611510606" expanded="false" signature="763:986" ph="..." />
+                <marker date="1501611510606" expanded="true" signature="1022:1935" ph="{...}" />
+                <marker date="1501611510606" expanded="true" signature="1055:1932" ph="{...}" />
+                <marker date="1501611510606" expanded="true" signature="1151:1494" ph="{...}" />
+                <marker date="1501611510606" expanded="true" signature="1574:1926" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UDPSocket.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/UDPSocket.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="16" />
+              <folding>
+                <marker date="1459431416000" expanded="false" signature="95:237" ph="..." />
+                <marker date="1459431416000" expanded="true" signature="337:987" ph="{...}" />
+                <marker date="1459431416000" expanded="true" signature="1089:1468" ph="{...}" />
+                <marker date="1459431416000" expanded="true" signature="1604:1940" ph="{...}" />
+                <marker date="1459431416000" expanded="true" signature="2052:2233" ph="{...}" />
+                <marker date="1459431416000" expanded="true" signature="2298:2385" ph="{...}" />
+                <marker date="1459431416000" expanded="true" signature="2473:2511" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,8 +116,8 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+            <state relative-caret-position="209">
+              <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -90,7 +129,17 @@
             <state relative-caret-position="202">
               <caret line="27" column="59" lean-forward="false" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
               <folding>
-                <element signature="e#40#71#0" expanded="true" />
+                <marker date="1501611351846" expanded="true" signature="49:114" ph="..." />
+                <marker date="1501611351846" expanded="true" signature="179:233" ph="{...}" />
+                <marker date="1501611351846" expanded="true" signature="288:525" ph="{...}" />
+                <marker date="1501611351846" expanded="true" signature="588:740" ph="{...}" />
+                <marker date="1501611351846" expanded="true" signature="789:922" ph="{...}" />
+                <marker date="1501611351846" expanded="true" signature="975:1095" ph="{...}" />
+                <marker date="1501611351846" expanded="true" signature="1142:1566" ph="{...}" />
+                <marker date="1501611351846" expanded="true" signature="1608:1743" ph="{...}" />
+                <marker date="1501611351846" expanded="true" signature="1783:1918" ph="{...}" />
+                <marker date="1501611351846" expanded="true" signature="1950:2324" ph="{...}" />
+                <marker date="1501611351846" expanded="true" signature="2368:2414" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -102,7 +151,9 @@
             <state relative-caret-position="153">
               <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
               <folding>
-                <element signature="e#119#138#0" expanded="true" />
+                <marker date="1501611351868" expanded="true" signature="128:304" ph="..." />
+                <marker date="1501611351868" expanded="true" signature="343:984" ph="{...}" />
+                <marker date="1501611351868" expanded="true" signature="390:980" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -444,7 +495,7 @@
       <workItem from="1501500247390" duration="15625000" />
       <workItem from="1501594424049" duration="754000" />
       <workItem from="1501596251402" duration="5742000" />
-      <workItem from="1501610188492" duration="2524000" />
+      <workItem from="1501610188492" duration="2681000" />
     </task>
     <task id="LOCAL-00001" summary="user registration">
       <created>1501507803422</created>
@@ -481,11 +532,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501602189908</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added UDP connection">
+      <created>1501612758079</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1501612758079</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53113000" />
+    <option name="totallyTimeSpent" value="53270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -523,7 +581,8 @@
     <MESSAGE value="user LOGIN" />
     <MESSAGE value="users login is working - one bug need to press enter twice after login" />
     <MESSAGE value="added &quot;l&quot; command to get users list" />
-    <option name="LAST_COMMIT_MESSAGE" value="added &quot;l&quot; command to get users list" />
+    <MESSAGE value="added UDP connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="added UDP connection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -539,22 +598,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Client/TCPMessengerClient.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="57" column="22" lean-forward="false" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
-          <folding>
-            <element signature="e#40#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client_main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
           <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
-            <element signature="e#41#79#0" expanded="true" />
+            <marker date="1501611704079" expanded="true" signature="50:157" ph="..." />
+            <marker date="1501611704079" expanded="true" signature="226:579" ph="{...}" />
+            <marker date="1501611704079" expanded="true" signature="592:2020" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -564,7 +615,17 @@
         <state relative-caret-position="901">
           <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
           <folding>
-            <element signature="e#40#71#0" expanded="true" />
+            <marker date="1501611351846" expanded="true" signature="49:114" ph="..." />
+            <marker date="1501611351846" expanded="true" signature="179:233" ph="{...}" />
+            <marker date="1501611351846" expanded="true" signature="288:525" ph="{...}" />
+            <marker date="1501611351846" expanded="true" signature="588:740" ph="{...}" />
+            <marker date="1501611351846" expanded="true" signature="789:922" ph="{...}" />
+            <marker date="1501611351846" expanded="true" signature="975:1095" ph="{...}" />
+            <marker date="1501611351846" expanded="true" signature="1142:1566" ph="{...}" />
+            <marker date="1501611351846" expanded="true" signature="1608:1743" ph="{...}" />
+            <marker date="1501611351846" expanded="true" signature="1783:1918" ph="{...}" />
+            <marker date="1501611351846" expanded="true" signature="1950:2324" ph="{...}" />
+            <marker date="1501611351846" expanded="true" signature="2368:2414" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -574,7 +635,9 @@
         <state relative-caret-position="374">
           <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
           <folding>
-            <element signature="e#119#138#0" expanded="true" />
+            <marker date="1501611351868" expanded="true" signature="128:304" ph="..." />
+            <marker date="1501611351868" expanded="true" signature="343:984" ph="{...}" />
+            <marker date="1501611351868" expanded="true" signature="390:980" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -592,7 +655,9 @@
         <state relative-caret-position="85">
           <caret line="5" column="18" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="59" selection-end-column="3" />
           <folding>
-            <element signature="e#41#79#0" expanded="true" />
+            <marker date="1501611704079" expanded="true" signature="50:157" ph="..." />
+            <marker date="1501611704079" expanded="true" signature="226:579" ph="{...}" />
+            <marker date="1501611704079" expanded="true" signature="592:2020" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -759,16 +824,18 @@
         <state relative-caret-position="202">
           <caret line="27" column="59" lean-forward="false" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
           <folding>
-            <element signature="e#40#71#0" expanded="true" />
+            <marker date="1501611351846" expanded="true" signature="49:114" ph="..." />
+            <marker date="1501611351846" expanded="true" signature="179:233" ph="{...}" />
+            <marker date="1501611351846" expanded="true" signature="288:525" ph="{...}" />
+            <marker date="1501611351846" expanded="true" signature="588:740" ph="{...}" />
+            <marker date="1501611351846" expanded="true" signature="789:922" ph="{...}" />
+            <marker date="1501611351846" expanded="true" signature="975:1095" ph="{...}" />
+            <marker date="1501611351846" expanded="true" signature="1142:1566" ph="{...}" />
+            <marker date="1501611351846" expanded="true" signature="1608:1743" ph="{...}" />
+            <marker date="1501611351846" expanded="true" signature="1783:1918" ph="{...}" />
+            <marker date="1501611351846" expanded="true" signature="1950:2324" ph="{...}" />
+            <marker date="1501611351846" expanded="true" signature="2368:2414" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/TCPMessengerProtocol.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="55" column="16" lean-forward="false" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -777,7 +844,9 @@
         <state relative-caret-position="153">
           <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding>
-            <element signature="e#119#138#0" expanded="true" />
+            <marker date="1501611351868" expanded="true" signature="128:304" ph="..." />
+            <marker date="1501611351868" expanded="true" signature="343:984" ph="{...}" />
+            <marker date="1501611351868" expanded="true" signature="390:980" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -787,16 +856,10 @@
         <state relative-caret-position="238">
           <caret line="54" column="33" lean-forward="false" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
           <folding>
-            <element signature="e#41#79#0" expanded="true" />
+            <marker date="1501611704079" expanded="true" signature="50:157" ph="..." />
+            <marker date="1501611704079" expanded="true" signature="226:579" ph="{...}" />
+            <marker date="1501611704079" expanded="true" signature="592:2020" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/UDPMessenger.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -804,14 +867,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1501612721518" expanded="true" signature="75:330" ph="{...}" />
+            <marker date="1501612721518" expanded="true" signature="361:459" ph="{...}" />
+            <marker date="1501612721518" expanded="true" signature="524:568" ph="{...}" />
+            <marker date="1501612721518" expanded="true" signature="614:641" ph="{...}" />
+            <marker date="1501612721518" expanded="true" signature="670:767" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/UDPMessenger.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <marker date="1501612721418" expanded="true" signature="101:835" ph="{...}" />
+            <marker date="1501612721418" expanded="true" signature="139:832" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/TCPMessengerProtocol.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="55" column="16" lean-forward="false" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+          <folding>
+            <marker date="1501611510606" expanded="false" signature="763:986" ph="..." />
+            <marker date="1501611510606" expanded="true" signature="1022:1935" ph="{...}" />
+            <marker date="1501611510606" expanded="true" signature="1055:1932" ph="{...}" />
+            <marker date="1501611510606" expanded="true" signature="1151:1494" ph="{...}" />
+            <marker date="1501611510606" expanded="true" signature="1574:1926" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/UDPSocket.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="16" />
+          <folding>
+            <marker date="1459431416000" expanded="false" signature="95:237" ph="..." />
+            <marker date="1459431416000" expanded="true" signature="337:987" ph="{...}" />
+            <marker date="1459431416000" expanded="true" signature="1089:1468" ph="{...}" />
+            <marker date="1459431416000" expanded="true" signature="1604:1940" ph="{...}" />
+            <marker date="1459431416000" expanded="true" signature="2052:2233" ph="{...}" />
+            <marker date="1459431416000" expanded="true" signature="2298:2385" ph="{...}" />
+            <marker date="1459431416000" expanded="true" signature="2473:2511" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        <state relative-caret-position="209">
+          <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding />
         </state>
       </provider>
