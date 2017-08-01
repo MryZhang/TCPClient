@@ -16,6 +16,7 @@ void printInstructions() {
     cout << "d - disconnect from server" << endl;
     cout << "s <msg> - send a message" << endl;
     cout << "x - exit the program" << endl;
+    cout << "l - list all available players" << endl;
 }
 
 int main() {
@@ -39,6 +40,7 @@ int main() {
 //            client->connect(ip);
             client->connect("127.0.0.1");
             client->login_or_register();
+            printInstructions();
         } else if (command == "o") {
             string ipAndPort;
             cin >> ipAndPort;
@@ -51,7 +53,10 @@ int main() {
             client->closeSession();
         } else if (command == "d") {
             client->disconnect();
-        } else if (command == "x") {
+        } else if (command == "l") {
+            client->send(GET_USERS_LIST,"");
+        }
+        else if (command == "x") {
             break;
         } else {
             cout << "wrong input" << endl;

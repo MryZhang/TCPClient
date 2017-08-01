@@ -35,6 +35,11 @@ void TCPMessengerClient::send(const string msg) {
     TCPMessengerProtocol::sendToServer(SEND_MSG_TO_PEER, msg, sock);
 }
 
+void TCPMessengerClient::send(int cmd, string msg) {
+    cout << "sending message cmd = "<< cmd << endl << flush;
+    TCPMessengerProtocol::sendToServer(cmd, msg, sock);
+}
+
 void TCPMessengerClient::login_or_register() {
     string msg;
     msg.clear();
@@ -50,11 +55,6 @@ void TCPMessengerClient::login_or_register() {
         TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
     }
 
-}
-
-void TCPMessengerClient::send(int cmd, string msg) {
-    cout << "sending messagec"<< endl << flush;
-    TCPMessengerProtocol::sendToServer(cmd, msg, sock);
 }
 
 void TCPMessengerClient::closeSession() {
