@@ -14,6 +14,8 @@ set(SOURCE_FILES
         utils/MThread.h
         utils/MultipleTCPSocketListener.cpp
         utils/MultipleTCPSocketListener.h
+        utils/UDPMessenger.h
+        utils/UDPMessenger.cpp
         utils/Socket.cpp
         utils/Socket.h
         utils/TCPMessengerProtocol.h

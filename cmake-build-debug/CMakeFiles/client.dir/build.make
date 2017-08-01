@@ -177,9 +177,33 @@ CMakeFiles/client.dir/utils/MultipleTCPSocketListener.cpp.o.provides: CMakeFiles
 CMakeFiles/client.dir/utils/MultipleTCPSocketListener.cpp.o.provides.build: CMakeFiles/client.dir/utils/MultipleTCPSocketListener.cpp.o
 
 
+CMakeFiles/client.dir/utils/UDPMessenger.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/utils/UDPMessenger.cpp.o: ../utils/UDPMessenger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/client.dir/utils/UDPMessenger.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/utils/UDPMessenger.cpp.o -c /cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPMessenger.cpp
+
+CMakeFiles/client.dir/utils/UDPMessenger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/utils/UDPMessenger.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPMessenger.cpp > CMakeFiles/client.dir/utils/UDPMessenger.cpp.i
+
+CMakeFiles/client.dir/utils/UDPMessenger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/utils/UDPMessenger.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/omrih/ClionProjects/client/utils/UDPMessenger.cpp -o CMakeFiles/client.dir/utils/UDPMessenger.cpp.s
+
+CMakeFiles/client.dir/utils/UDPMessenger.cpp.o.requires:
+
+.PHONY : CMakeFiles/client.dir/utils/UDPMessenger.cpp.o.requires
+
+CMakeFiles/client.dir/utils/UDPMessenger.cpp.o.provides: CMakeFiles/client.dir/utils/UDPMessenger.cpp.o.requires
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/UDPMessenger.cpp.o.provides.build
+.PHONY : CMakeFiles/client.dir/utils/UDPMessenger.cpp.o.provides
+
+CMakeFiles/client.dir/utils/UDPMessenger.cpp.o.provides.build: CMakeFiles/client.dir/utils/UDPMessenger.cpp.o
+
+
 CMakeFiles/client.dir/utils/Socket.cpp.o: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/utils/Socket.cpp.o: ../utils/Socket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/client.dir/utils/Socket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/client.dir/utils/Socket.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/utils/Socket.cpp.o -c /cygdrive/c/Users/omrih/ClionProjects/client/utils/Socket.cpp
 
 CMakeFiles/client.dir/utils/Socket.cpp.i: cmake_force
@@ -203,7 +227,7 @@ CMakeFiles/client.dir/utils/Socket.cpp.o.provides.build: CMakeFiles/client.dir/u
 
 CMakeFiles/client.dir/utils/TCPSocket.cpp.o: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/utils/TCPSocket.cpp.o: ../utils/TCPSocket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/client.dir/utils/TCPSocket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/client.dir/utils/TCPSocket.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/utils/TCPSocket.cpp.o -c /cygdrive/c/Users/omrih/ClionProjects/client/utils/TCPSocket.cpp
 
 CMakeFiles/client.dir/utils/TCPSocket.cpp.i: cmake_force
@@ -227,7 +251,7 @@ CMakeFiles/client.dir/utils/TCPSocket.cpp.o.provides.build: CMakeFiles/client.di
 
 CMakeFiles/client.dir/client_main.cpp.o: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/client_main.cpp.o: ../client_main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/client.dir/client_main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/client.dir/client_main.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/client_main.cpp.o -c /cygdrive/c/Users/omrih/ClionProjects/client/client_main.cpp
 
 CMakeFiles/client.dir/client_main.cpp.i: cmake_force
@@ -256,6 +280,7 @@ client_OBJECTS = \
 "CMakeFiles/client.dir/utils/FileInterface.cpp.o" \
 "CMakeFiles/client.dir/utils/MThread.cpp.o" \
 "CMakeFiles/client.dir/utils/MultipleTCPSocketListener.cpp.o" \
+"CMakeFiles/client.dir/utils/UDPMessenger.cpp.o" \
 "CMakeFiles/client.dir/utils/Socket.cpp.o" \
 "CMakeFiles/client.dir/utils/TCPSocket.cpp.o" \
 "CMakeFiles/client.dir/client_main.cpp.o"
@@ -268,12 +293,13 @@ client.exe: CMakeFiles/client.dir/utils/File.cpp.o
 client.exe: CMakeFiles/client.dir/utils/FileInterface.cpp.o
 client.exe: CMakeFiles/client.dir/utils/MThread.cpp.o
 client.exe: CMakeFiles/client.dir/utils/MultipleTCPSocketListener.cpp.o
+client.exe: CMakeFiles/client.dir/utils/UDPMessenger.cpp.o
 client.exe: CMakeFiles/client.dir/utils/Socket.cpp.o
 client.exe: CMakeFiles/client.dir/utils/TCPSocket.cpp.o
 client.exe: CMakeFiles/client.dir/client_main.cpp.o
 client.exe: CMakeFiles/client.dir/build.make
 client.exe: CMakeFiles/client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable client.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/omrih/ClionProjects/client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable client.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -286,6 +312,7 @@ CMakeFiles/client.dir/requires: CMakeFiles/client.dir/utils/File.cpp.o.requires
 CMakeFiles/client.dir/requires: CMakeFiles/client.dir/utils/FileInterface.cpp.o.requires
 CMakeFiles/client.dir/requires: CMakeFiles/client.dir/utils/MThread.cpp.o.requires
 CMakeFiles/client.dir/requires: CMakeFiles/client.dir/utils/MultipleTCPSocketListener.cpp.o.requires
+CMakeFiles/client.dir/requires: CMakeFiles/client.dir/utils/UDPMessenger.cpp.o.requires
 CMakeFiles/client.dir/requires: CMakeFiles/client.dir/utils/Socket.cpp.o.requires
 CMakeFiles/client.dir/requires: CMakeFiles/client.dir/utils/TCPSocket.cpp.o.requires
 CMakeFiles/client.dir/requires: CMakeFiles/client.dir/client_main.cpp.o.requires

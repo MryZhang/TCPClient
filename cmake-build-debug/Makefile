@@ -339,6 +339,33 @@ utils/TCPSocket.cpp.s:
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/TCPSocket.cpp.s
 .PHONY : utils/TCPSocket.cpp.s
 
+utils/UDPMessenger.o: utils/UDPMessenger.cpp.o
+
+.PHONY : utils/UDPMessenger.o
+
+# target to build an object file
+utils/UDPMessenger.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/UDPMessenger.cpp.o
+.PHONY : utils/UDPMessenger.cpp.o
+
+utils/UDPMessenger.i: utils/UDPMessenger.cpp.i
+
+.PHONY : utils/UDPMessenger.i
+
+# target to preprocess a source file
+utils/UDPMessenger.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/UDPMessenger.cpp.i
+.PHONY : utils/UDPMessenger.cpp.i
+
+utils/UDPMessenger.s: utils/UDPMessenger.cpp.s
+
+.PHONY : utils/UDPMessenger.s
+
+# target to generate assembly for a file
+utils/UDPMessenger.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/UDPMessenger.cpp.s
+.PHONY : utils/UDPMessenger.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -372,6 +399,9 @@ help:
 	@echo "... utils/TCPSocket.o"
 	@echo "... utils/TCPSocket.i"
 	@echo "... utils/TCPSocket.s"
+	@echo "... utils/UDPMessenger.o"
+	@echo "... utils/UDPMessenger.i"
+	@echo "... utils/UDPMessenger.s"
 .PHONY : help
 
 

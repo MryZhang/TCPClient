@@ -41,13 +41,8 @@ namespace npl {
     class TCPMessengerProtocol {
     public:
         void static sendToServer(int command,const string& data, TCPSocket* sock) {
-
             char com[4];
             *((int*) com) = htonl(command);
-
-            /*char com[4];
-             com = command;*/
-
             sock->write(com, 4);
             if (data.length() > 0) {
                 char len[4];
@@ -69,35 +64,6 @@ namespace npl {
             buff[len] = '\0';
             data = buff;
             cout << data << endl;
-
-//            switch (command) {
-//                case SEND_MSG_TO_PEER:
-//                    char buff[1024];
-//                    int len;
-//                    sock->read((char*) &len, 4);
-//                    len = ntohl(len);
-//                    sock->read(buff, len);
-//                    buff[len] = '\0';
-//                    data = buff;
-//                    cout << data << endl;
-//                    break;
-//                case OPEN_SESSION_WITH_PEER:
-//                case SESSION_REFUSED:
-//                    char buff1[1024];
-//                    int len1;
-//                    sock->read((char*) &len1, 4);
-//                    len = ntohl(len1);
-//                    sock->read(buff1, len);
-//                    buff1[len] = '\0';
-//                    data = buff1;
-//                    cout << data << endl;
-//                    break;
-////                    cout << data << endl;
-////                    break;
-//                default:
-//                    cout << "switch case - default value command:" << command << " data :" << data << endl;
-//                    break;
-//            }
         }
     };
 }

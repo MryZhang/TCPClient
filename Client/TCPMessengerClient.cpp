@@ -25,9 +25,9 @@ void TCPMessengerClient::connect(const string& ip) {
         cout<<"server already connected!"<<endl<<flush;
 }
 
-void TCPMessengerClient::openSession(const string& ipAndPort) {
-    cout << "openSession with server" << ipAndPort << endl << flush;
-    TCPMessengerProtocol::sendToServer(OPEN_SESSION_WITH_PEER, ipAndPort, sock);
+void TCPMessengerClient::openSession(const string& username) {
+    cout << "openSession with server" << username << endl << flush;
+    TCPMessengerProtocol::sendToServer(OPEN_SESSION_WITH_PEER, username, sock);
 
 }
 void TCPMessengerClient::send(const string msg) {

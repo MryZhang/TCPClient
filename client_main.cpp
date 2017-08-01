@@ -38,13 +38,13 @@ int main() {
 //            if (msg.size() > 0 && msg[0] == ' ')
 //                msg.erase(0, 1);
 //            client->connect(ip);
-            client->connect("127.0.0.1");
+            client->connect("10.0.0.5");
             client->login_or_register();
             printInstructions();
         } else if (command == "o") {
-            string ipAndPort;
-            cin >> ipAndPort;
-            client->openSession(ipAndPort);
+            string username;
+            cin >> username;
+            client->openSession(username);
         } else if (command == "s") {
             getline(std::cin, msg);
             if (msg.size() > 0 && msg[0] == ' ')

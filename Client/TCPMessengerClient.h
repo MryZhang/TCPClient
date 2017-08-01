@@ -26,7 +26,7 @@ namespace npl {
     public:
         TCPMessengerClient();
         void connect(const string& ip);
-        void openSession(const string& ipAndPort);
+        void openSession(const string& username);
         void send(const string msg);
         void login_or_register();
         void send (int cmd , string msg);

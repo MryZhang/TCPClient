@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/client.dir/utils/FileInterface.cpp.o"
   "CMakeFiles/client.dir/utils/MThread.cpp.o"
   "CMakeFiles/client.dir/utils/MultipleTCPSocketListener.cpp.o"
+  "CMakeFiles/client.dir/utils/UDPMessenger.cpp.o"
   "CMakeFiles/client.dir/utils/Socket.cpp.o"
   "CMakeFiles/client.dir/utils/TCPSocket.cpp.o"
   "CMakeFiles/client.dir/client_main.cpp.o"
