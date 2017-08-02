@@ -8,7 +8,7 @@ namespace npl {
 
 
     class UDPGAME : public MThread {
-        static const int GAME_PORT = 3344;
+        static const int GAME_PORT = 50999;
         UDPSocket *udpSocket;
         bool runing;
         string sendtoip;

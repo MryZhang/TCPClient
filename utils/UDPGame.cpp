@@ -28,6 +28,7 @@ UDPGAME::UDPGAME(string ip , bool * flag) {
 }
 
 void UDPGAME::sendTo(const string& msg) {
+    cout << "sending " << msg << endl;
 	udpSocket->sendTo(msg, sendtoip, GAME_PORT);
 }
 
