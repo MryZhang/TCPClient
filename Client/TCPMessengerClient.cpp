@@ -44,16 +44,21 @@ void TCPMessengerClient::login_or_register() {
     string msg;
     msg.clear();
     //selection - 1-login 2-register
-    cin >> msg;
+//    cin >> msg;
+    getline(cin,msg);
     TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
-    while (!this->isConnected){
-        //username
-        cin >> msg;
-        TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
-        //password
-        cin >> msg;
-        TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
-    }
+//    while (!this->isConnected){
+    //username
+//        cin >> msg;
+    msg.clear();
+    getline(cin,msg);
+    TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
+    //password
+//        cin >> msg;
+    msg.clear();
+    getline(cin,msg);
+    TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
+//    }
 
 }
 
@@ -84,9 +89,10 @@ void TCPMessengerClient::run(){
             case GAME_SESSION:
                 bool flag = true;
                 UDPGAME * udpgame = new UDPGAME(data , &flag);
-                while (flag){
+                while (true){
                     string msg;
-                    cin >> msg;
+                    getline(cin,msg);
+//                    cin >> msg;
                     udpgame->sendTo(msg);
                     msg.clear();
                 }

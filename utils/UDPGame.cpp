@@ -1,47 +1,53 @@
 #include "UDPGame.h"
 
-
+using namespace std;
 using namespace npl;
 
-void UDPGAME::run() {
-	// receiver thread...
-	while (runing) {
-		char buffer[1024];
-		int n = udpSocket->recv(buffer, sizeof(buffer));
-		if(n < 0){
-			break;
-		}
-		buffer[n] = '\0';
-		cout<<endl<<"the msg--->"<< buffer<<endl;
+static bool running;
 
-	}
-	cout << "closing receiver thread" << endl;
+void UDPGAME::run() {
+    // receiver thread...
+    while (running) {
+        char buffer[1024];
+        int n = udpSocket->recv(buffer, sizeof(buffer));
+        if(n < 0){
+            break;
+        }
+        buffer[n] = '\0';
+        cout<<endl<<"the msg--->"<< buffer<<endl;
+
+    }
+    cout << "closing receiver thread" << endl;
 
 }
 
 UDPGAME::UDPGAME(string ip , bool * flag) {
-	// init the messenger
-	udpSocket = new UDPSocket(GAME_PORT);
-	runing = true;
+    // init the messenger
+    udpSocket = new UDPSocket(GAME_PORT);
+    running = true;
     sendtoip = ip;
-	this->start();
+    this->start();
 }
 
 void UDPGAME::sendTo(const string& msg) {
     cout << "sending " << msg << endl;
-	udpSocket->sendTo(msg, sendtoip, GAME_PORT);
+    udpSocket->sendTo(msg, sendtoip, GAME_PORT);
 }
 
 void UDPGAME::reply(const string& msg) {
-	udpSocket->reply(msg);
+    udpSocket->reply(msg);
 }
 
 void UDPGAME::close() {
-	runing = false;
-	udpSocket->close();
-	waitForThread();
-	delete udpSocket;
-	udpSocket = NULL;
+    running = false;
+    udpSocket->close();
+    waitForThread();
+    delete udpSocket;
+    udpSocket = NULL;
+}
+
+bool UDPGAME::isRunning() {
+    return running;
 }
 
 

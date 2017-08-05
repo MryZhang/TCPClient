@@ -26,10 +26,11 @@ int main() {
     printInstructions();
     while (true) {
         string msg;
-        msg.clear();
+//        msg.clear();
         string command;
-        command.clear();
-        cin >> command;
+//        command.clear();
+        getline(cin,command);
+//        cin >> command;
 
         if (command == "c") {
 //            string ip;
@@ -38,17 +39,22 @@ int main() {
 //            if (msg.size() > 0 && msg[0] == ' ')
 //                msg.erase(0, 1);
 //            client->connect(ip);
-            client->connect("192.168.43.55");
+            client->connect("10.0.0.10");
             client->login_or_register();
-            printInstructions();
+//            printInstructions();
         } else if (command == "o") {
             string username;
             username.clear();
-            cin >> username;
+            getline(cin,username);
+//            cin >> username;
             client->openSession(username);
-            username.clear();
+//            username.clear();
+            while(true){
+//                cout << "inside" << endl;
+                // wait;
+            }
         } else if (command == "s") {
-            getline(std::cin, msg);
+            getline(cin, msg);
             if (msg.size() > 0 && msg[0] == ' ')
                 client->send(msg);
         } else if (command == "cs") {

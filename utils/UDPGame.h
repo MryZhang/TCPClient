@@ -6,14 +6,12 @@
 using namespace std;
 namespace npl {
 
-
     class UDPGAME : public MThread {
         static const int GAME_PORT = 50999;
         UDPSocket *udpSocket;
-        bool runing;
         string sendtoip;
-
     public:
+
         UDPGAME(string ip , bool * flag);
 
         /**
@@ -38,5 +36,7 @@ namespace npl {
          * The thread should exist when the socket is closed
          */
         void run();
+
+        static bool isRunning();
     };
 }
