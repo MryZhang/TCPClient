@@ -1,3 +1,4 @@
+#include <cstring>
 #include "UDPGame.h"
 
 using namespace std;
@@ -14,6 +15,9 @@ void UDPGAME::run() {
             break;
         }
         buffer[n] = '\0';
+        if (strcmp(buffer,"xxx") == 0){
+            running = false;
+        }
         cout<<endl<<"the msg--->"<< buffer<<endl;
 
     }
@@ -24,7 +28,7 @@ void UDPGAME::run() {
 UDPGAME::UDPGAME(string ip , bool * flag) {
     // init the messenger
     udpSocket = new UDPSocket(GAME_PORT);
-    running = true;
+    running = flag;
     sendtoip = ip;
     this->start();
 }

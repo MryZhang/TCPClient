@@ -89,7 +89,7 @@ void TCPMessengerClient::run(){
             case GAME_SESSION:
                 bool flag = true;
                 UDPGAME * udpgame = new UDPGAME(data , &flag);
-                while (true){
+                while (flag){
                     string msg;
                     getline(cin,msg);
 //                    cin >> msg;
