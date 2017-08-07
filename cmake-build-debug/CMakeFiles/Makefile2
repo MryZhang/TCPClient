@@ -45,54 +45,54 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/User/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /cygdrive/c/Users/omrih/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/User/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /cygdrive/c/Users/omrih/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/User/ClionProjects/TCPClient
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/omrih/ClionProjects/TCPClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/User/ClionProjects/TCPClient/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/client.dir
+# Target rules for target CMakeFiles/TCPClient.dir
 
 # All Build rule for target.
-CMakeFiles/client.dir/all:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/depend
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/User/ClionProjects/TCPClient/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target client"
-.PHONY : CMakeFiles/client.dir/all
+CMakeFiles/TCPClient.dir/all:
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/depend
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target TCPClient"
+.PHONY : CMakeFiles/TCPClient.dir/all
 
 # Include target in all.
-all: CMakeFiles/client.dir/all
+all: CMakeFiles/TCPClient.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/User/ClionProjects/TCPClient/cmake-build-debug/CMakeFiles 11
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/User/ClionProjects/TCPClient/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/client.dir/rule
+CMakeFiles/TCPClient.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TCPClient.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/TCPClient.dir/rule
 
 # Convenience name for target.
-client: CMakeFiles/client.dir/rule
+TCPClient: CMakeFiles/TCPClient.dir/rule
 
-.PHONY : client
-
-# clean rule for target.
-CMakeFiles/client.dir/clean:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/clean
-.PHONY : CMakeFiles/client.dir/clean
+.PHONY : TCPClient
 
 # clean rule for target.
-clean: CMakeFiles/client.dir/clean
+CMakeFiles/TCPClient.dir/clean:
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/clean
+.PHONY : CMakeFiles/TCPClient.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/TCPClient.dir/clean
 
 .PHONY : clean
 

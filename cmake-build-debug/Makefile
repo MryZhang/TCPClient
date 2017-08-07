@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/User/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /cygdrive/c/Users/omrih/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/User/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /cygdrive/c/Users/omrih/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/User/ClionProjects/TCPClient
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/omrih/ClionProjects/TCPClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/User/ClionProjects/TCPClient/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /cygdrive/c/Users/User/ClionProjects/TCPClient/cmake-build-de
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/User/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/cygdrive/c/Users/omrih/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/User/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/cygdrive/c/Users/omrih/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/User/ClionProjects/TCPClient/cmake-build-debug/CMakeFiles /cygdrive/c/Users/User/ClionProjects/TCPClient/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/CMakeFiles /cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/User/ClionProjects/TCPClient/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named client
+# Target rules for targets named TCPClient
 
 # Build rule for target.
-client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 client
-.PHONY : client
+TCPClient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TCPClient
+.PHONY : TCPClient
 
 # fast build rule for target.
-client/fast:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
-.PHONY : client/fast
+TCPClient/fast:
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/build
+.PHONY : TCPClient/fast
 
 Client/TCPMessengerClient.o: Client/TCPMessengerClient.cpp.o
 
@@ -129,7 +129,7 @@ Client/TCPMessengerClient.o: Client/TCPMessengerClient.cpp.o
 
 # target to build an object file
 Client/TCPMessengerClient.cpp.o:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/Client/TCPMessengerClient.cpp.o
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/Client/TCPMessengerClient.cpp.o
 .PHONY : Client/TCPMessengerClient.cpp.o
 
 Client/TCPMessengerClient.i: Client/TCPMessengerClient.cpp.i
@@ -138,7 +138,7 @@ Client/TCPMessengerClient.i: Client/TCPMessengerClient.cpp.i
 
 # target to preprocess a source file
 Client/TCPMessengerClient.cpp.i:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/Client/TCPMessengerClient.cpp.i
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/Client/TCPMessengerClient.cpp.i
 .PHONY : Client/TCPMessengerClient.cpp.i
 
 Client/TCPMessengerClient.s: Client/TCPMessengerClient.cpp.s
@@ -147,7 +147,7 @@ Client/TCPMessengerClient.s: Client/TCPMessengerClient.cpp.s
 
 # target to generate assembly for a file
 Client/TCPMessengerClient.cpp.s:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/Client/TCPMessengerClient.cpp.s
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/Client/TCPMessengerClient.cpp.s
 .PHONY : Client/TCPMessengerClient.cpp.s
 
 client_main.o: client_main.cpp.o
@@ -156,7 +156,7 @@ client_main.o: client_main.cpp.o
 
 # target to build an object file
 client_main.cpp.o:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client_main.cpp.o
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/client_main.cpp.o
 .PHONY : client_main.cpp.o
 
 client_main.i: client_main.cpp.i
@@ -165,7 +165,7 @@ client_main.i: client_main.cpp.i
 
 # target to preprocess a source file
 client_main.cpp.i:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client_main.cpp.i
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/client_main.cpp.i
 .PHONY : client_main.cpp.i
 
 client_main.s: client_main.cpp.s
@@ -174,7 +174,7 @@ client_main.s: client_main.cpp.s
 
 # target to generate assembly for a file
 client_main.cpp.s:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client_main.cpp.s
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/client_main.cpp.s
 .PHONY : client_main.cpp.s
 
 utils/File.o: utils/File.cpp.o
@@ -183,7 +183,7 @@ utils/File.o: utils/File.cpp.o
 
 # target to build an object file
 utils/File.cpp.o:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/File.cpp.o
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/File.cpp.o
 .PHONY : utils/File.cpp.o
 
 utils/File.i: utils/File.cpp.i
@@ -192,7 +192,7 @@ utils/File.i: utils/File.cpp.i
 
 # target to preprocess a source file
 utils/File.cpp.i:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/File.cpp.i
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/File.cpp.i
 .PHONY : utils/File.cpp.i
 
 utils/File.s: utils/File.cpp.s
@@ -201,7 +201,7 @@ utils/File.s: utils/File.cpp.s
 
 # target to generate assembly for a file
 utils/File.cpp.s:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/File.cpp.s
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/File.cpp.s
 .PHONY : utils/File.cpp.s
 
 utils/FileInterface.o: utils/FileInterface.cpp.o
@@ -210,7 +210,7 @@ utils/FileInterface.o: utils/FileInterface.cpp.o
 
 # target to build an object file
 utils/FileInterface.cpp.o:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/FileInterface.cpp.o
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/FileInterface.cpp.o
 .PHONY : utils/FileInterface.cpp.o
 
 utils/FileInterface.i: utils/FileInterface.cpp.i
@@ -219,7 +219,7 @@ utils/FileInterface.i: utils/FileInterface.cpp.i
 
 # target to preprocess a source file
 utils/FileInterface.cpp.i:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/FileInterface.cpp.i
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/FileInterface.cpp.i
 .PHONY : utils/FileInterface.cpp.i
 
 utils/FileInterface.s: utils/FileInterface.cpp.s
@@ -228,7 +228,7 @@ utils/FileInterface.s: utils/FileInterface.cpp.s
 
 # target to generate assembly for a file
 utils/FileInterface.cpp.s:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/FileInterface.cpp.s
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/FileInterface.cpp.s
 .PHONY : utils/FileInterface.cpp.s
 
 utils/MThread.o: utils/MThread.cpp.o
@@ -237,7 +237,7 @@ utils/MThread.o: utils/MThread.cpp.o
 
 # target to build an object file
 utils/MThread.cpp.o:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/MThread.cpp.o
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/MThread.cpp.o
 .PHONY : utils/MThread.cpp.o
 
 utils/MThread.i: utils/MThread.cpp.i
@@ -246,7 +246,7 @@ utils/MThread.i: utils/MThread.cpp.i
 
 # target to preprocess a source file
 utils/MThread.cpp.i:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/MThread.cpp.i
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/MThread.cpp.i
 .PHONY : utils/MThread.cpp.i
 
 utils/MThread.s: utils/MThread.cpp.s
@@ -255,7 +255,7 @@ utils/MThread.s: utils/MThread.cpp.s
 
 # target to generate assembly for a file
 utils/MThread.cpp.s:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/MThread.cpp.s
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/MThread.cpp.s
 .PHONY : utils/MThread.cpp.s
 
 utils/MultipleTCPSocketListener.o: utils/MultipleTCPSocketListener.cpp.o
@@ -264,7 +264,7 @@ utils/MultipleTCPSocketListener.o: utils/MultipleTCPSocketListener.cpp.o
 
 # target to build an object file
 utils/MultipleTCPSocketListener.cpp.o:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/MultipleTCPSocketListener.cpp.o
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/MultipleTCPSocketListener.cpp.o
 .PHONY : utils/MultipleTCPSocketListener.cpp.o
 
 utils/MultipleTCPSocketListener.i: utils/MultipleTCPSocketListener.cpp.i
@@ -273,7 +273,7 @@ utils/MultipleTCPSocketListener.i: utils/MultipleTCPSocketListener.cpp.i
 
 # target to preprocess a source file
 utils/MultipleTCPSocketListener.cpp.i:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/MultipleTCPSocketListener.cpp.i
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/MultipleTCPSocketListener.cpp.i
 .PHONY : utils/MultipleTCPSocketListener.cpp.i
 
 utils/MultipleTCPSocketListener.s: utils/MultipleTCPSocketListener.cpp.s
@@ -282,7 +282,7 @@ utils/MultipleTCPSocketListener.s: utils/MultipleTCPSocketListener.cpp.s
 
 # target to generate assembly for a file
 utils/MultipleTCPSocketListener.cpp.s:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/MultipleTCPSocketListener.cpp.s
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/MultipleTCPSocketListener.cpp.s
 .PHONY : utils/MultipleTCPSocketListener.cpp.s
 
 utils/Socket.o: utils/Socket.cpp.o
@@ -291,7 +291,7 @@ utils/Socket.o: utils/Socket.cpp.o
 
 # target to build an object file
 utils/Socket.cpp.o:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/Socket.cpp.o
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/Socket.cpp.o
 .PHONY : utils/Socket.cpp.o
 
 utils/Socket.i: utils/Socket.cpp.i
@@ -300,7 +300,7 @@ utils/Socket.i: utils/Socket.cpp.i
 
 # target to preprocess a source file
 utils/Socket.cpp.i:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/Socket.cpp.i
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/Socket.cpp.i
 .PHONY : utils/Socket.cpp.i
 
 utils/Socket.s: utils/Socket.cpp.s
@@ -309,7 +309,7 @@ utils/Socket.s: utils/Socket.cpp.s
 
 # target to generate assembly for a file
 utils/Socket.cpp.s:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/Socket.cpp.s
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/Socket.cpp.s
 .PHONY : utils/Socket.cpp.s
 
 utils/TCPSocket.o: utils/TCPSocket.cpp.o
@@ -318,7 +318,7 @@ utils/TCPSocket.o: utils/TCPSocket.cpp.o
 
 # target to build an object file
 utils/TCPSocket.cpp.o:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/TCPSocket.cpp.o
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/TCPSocket.cpp.o
 .PHONY : utils/TCPSocket.cpp.o
 
 utils/TCPSocket.i: utils/TCPSocket.cpp.i
@@ -327,7 +327,7 @@ utils/TCPSocket.i: utils/TCPSocket.cpp.i
 
 # target to preprocess a source file
 utils/TCPSocket.cpp.i:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/TCPSocket.cpp.i
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/TCPSocket.cpp.i
 .PHONY : utils/TCPSocket.cpp.i
 
 utils/TCPSocket.s: utils/TCPSocket.cpp.s
@@ -336,7 +336,7 @@ utils/TCPSocket.s: utils/TCPSocket.cpp.s
 
 # target to generate assembly for a file
 utils/TCPSocket.cpp.s:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/TCPSocket.cpp.s
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/TCPSocket.cpp.s
 .PHONY : utils/TCPSocket.cpp.s
 
 utils/UDPGame.o: utils/UDPGame.cpp.o
@@ -345,7 +345,7 @@ utils/UDPGame.o: utils/UDPGame.cpp.o
 
 # target to build an object file
 utils/UDPGame.cpp.o:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/UDPGame.cpp.o
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/UDPGame.cpp.o
 .PHONY : utils/UDPGame.cpp.o
 
 utils/UDPGame.i: utils/UDPGame.cpp.i
@@ -354,7 +354,7 @@ utils/UDPGame.i: utils/UDPGame.cpp.i
 
 # target to preprocess a source file
 utils/UDPGame.cpp.i:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/UDPGame.cpp.i
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/UDPGame.cpp.i
 .PHONY : utils/UDPGame.cpp.i
 
 utils/UDPGame.s: utils/UDPGame.cpp.s
@@ -363,7 +363,7 @@ utils/UDPGame.s: utils/UDPGame.cpp.s
 
 # target to generate assembly for a file
 utils/UDPGame.cpp.s:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/UDPGame.cpp.s
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/UDPGame.cpp.s
 .PHONY : utils/UDPGame.cpp.s
 
 utils/UDPSocket.o: utils/UDPSocket.cpp.o
@@ -372,7 +372,7 @@ utils/UDPSocket.o: utils/UDPSocket.cpp.o
 
 # target to build an object file
 utils/UDPSocket.cpp.o:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/UDPSocket.cpp.o
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/UDPSocket.cpp.o
 .PHONY : utils/UDPSocket.cpp.o
 
 utils/UDPSocket.i: utils/UDPSocket.cpp.i
@@ -381,7 +381,7 @@ utils/UDPSocket.i: utils/UDPSocket.cpp.i
 
 # target to preprocess a source file
 utils/UDPSocket.cpp.i:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/UDPSocket.cpp.i
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/UDPSocket.cpp.i
 .PHONY : utils/UDPSocket.cpp.i
 
 utils/UDPSocket.s: utils/UDPSocket.cpp.s
@@ -390,7 +390,7 @@ utils/UDPSocket.s: utils/UDPSocket.cpp.s
 
 # target to generate assembly for a file
 utils/UDPSocket.cpp.s:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/utils/UDPSocket.cpp.s
+	$(MAKE) -f CMakeFiles/TCPClient.dir/build.make CMakeFiles/TCPClient.dir/utils/UDPSocket.cpp.s
 .PHONY : utils/UDPSocket.cpp.s
 
 # Help Target
@@ -401,7 +401,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... client"
+	@echo "... TCPClient"
 	@echo "... Client/TCPMessengerClient.o"
 	@echo "... Client/TCPMessengerClient.i"
 	@echo "... Client/TCPMessengerClient.s"
