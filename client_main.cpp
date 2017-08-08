@@ -39,7 +39,7 @@ int main() {
 //            if (msg.size() > 0 && msg[0] == ' ')
 //                msg.erase(0, 1);
 //            client->connect(ip);
-            client->connect("192.168.1.31");
+            client->connect("192.168.1.39");
             client->login_or_register();
 //            printInstructions();
         } else if (command == "o") {

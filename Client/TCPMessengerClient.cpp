@@ -92,7 +92,6 @@ void TCPMessengerClient::run(){
                 string local_choose="0";
                 string remote_choose="0";
                 UDPGAME * udpgame = new UDPGAME(data , &running,&remote_choose,&local_choose, & local_choose_int);
-                TCPMessengerProtocol::readFromServer(command,data,sock);
                 while (running){
                     if (local_choose_int == 0){
                         cout<< "1.rock\n2.papre\n3.scissors"<<endl;
