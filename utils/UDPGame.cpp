@@ -21,7 +21,8 @@ void UDPGAME::run() {
         }
         else{
             this->remote_choose->copy(buffer, sizeof(buffer),0);
-            cout<<endl<<"the msg--->"<< buffer<<endl;
+            cout<<endl<<"buffer--->"<< buffer<<endl;
+            cout<<endl<<"remote_choose--->"<< remote_choose<<endl;
         }
     }
     cout << "closing receiver thread" << endl;
