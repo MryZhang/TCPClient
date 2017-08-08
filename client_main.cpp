@@ -24,6 +24,7 @@ int main() {
     cout << "Welcome to TCP Client messenger" << endl;
     TCPMessengerClient* client = new TCPMessengerClient();
     printInstructions();
+
     while (true) {
         string msg;
 //        msg.clear();

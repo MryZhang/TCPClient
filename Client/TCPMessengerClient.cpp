@@ -117,15 +117,15 @@ void TCPMessengerClient::run(){
                         if (remote_choose.compare("0") != 0){
                             remote_choose_int = stoi(remote_choose);
                             if(local_choose_int == ROCK and remote_choose_int == SCISSORS){
-                                udpgame->sendTo("you lost!");
+//                                udpgame->sendTo("you lost!");
                                 cout<< "you win" << endl;
                             }
                             else if(local_choose_int == ROCK and remote_choose_int == PAPER){
-                                udpgame->sendTo("you win!");
+//                                udpgame->sendTo("you win!");
                                 cout<< "you lost" << endl;
                             }
                             else if(local_choose_int == ROCK and remote_choose_int == ROCK){
-                                udpgame->sendTo("TIE!");
+//                                udpgame->sendTo("TIE!");
                                 cout<< "TIE!" << endl;
                             }
                             else if(local_choose_int == PAPER and remote_choose_int == ROCK){
@@ -133,11 +133,11 @@ void TCPMessengerClient::run(){
                                 cout<< "you win" << endl;
                             }
                             else if(local_choose_int == PAPER and remote_choose_int == SCISSORS){
-                                udpgame->sendTo("you win!");
+//                                udpgame->sendTo("you win!");
                                 cout<< "you lost" << endl;
                             }
                             else if(local_choose_int == PAPER and remote_choose_int == PAPER){
-                                udpgame->sendTo("TIE!");
+//                                udpgame->sendTo("TIE!");
                                 cout<< "TIE!" << endl;
                             }
                             else if(local_choose_int == SCISSORS and remote_choose_int == ROCK){
@@ -145,11 +145,11 @@ void TCPMessengerClient::run(){
                                 cout<< "you lost" << endl;
                             }
                             else if(local_choose_int == SCISSORS and remote_choose_int == PAPER){
-                                udpgame->sendTo("you lost!");
+//                                udpgame->sendTo("you lost!");
                                 cout<< "you win" << endl;
                             }
                             else if(local_choose_int == SCISSORS and remote_choose_int == SCISSORS){
-                                udpgame->sendTo("TIE!");
+//                                udpgame->sendTo("TIE!");
                                 cout<< "TIE!" << endl;
                             }
                             local_choose_int = 0;

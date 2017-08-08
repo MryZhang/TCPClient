@@ -11,10 +11,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9137cc89-0da1-4046-a54d-50465ec549a7" name="Default" comment="xxx to cancel the game">
+    <list default="true" id="9137cc89-0da1-4046-a54d-50465ec549a7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/TCPMessengerClient.cpp" afterPath="$PROJECT_DIR$/Client/TCPMessengerClient.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client_main.cpp" afterPath="$PROJECT_DIR$/client_main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/UDPGame.cpp" afterPath="$PROJECT_DIR$/utils/UDPGame.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +30,8 @@
       <file leaf-file-name="client_main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client_main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="41" column="41" lean-forward="false" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+            <state relative-caret-position="-470">
+              <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -39,8 +40,8 @@
       <file leaf-file-name="UDPGame.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/UDPGame.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="46" lean-forward="false" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+            <state relative-caret-position="-187">
+              <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -61,8 +62,8 @@
       <file leaf-file-name="TCPMessengerClient.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Client/TCPMessengerClient.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state relative-caret-position="1291">
+              <caret line="152" column="54" lean-forward="true" selection-start-line="152" selection-start-column="54" selection-end-line="152" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -138,8 +139,8 @@
         <option value="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
         <option value="$PROJECT_DIR$/utils/TCPMessengerProtocol.h" />
         <option value="$PROJECT_DIR$/utils/UDPGame.h" />
-        <option value="$PROJECT_DIR$/utils/UDPGame.cpp" />
         <option value="$PROJECT_DIR$/client_main.cpp" />
+        <option value="$PROJECT_DIR$/utils/UDPGame.cpp" />
         <option value="$PROJECT_DIR$/Client/TCPMessengerClient.cpp" />
       </list>
     </option>
@@ -473,7 +474,7 @@
       <workItem from="1502118784337" duration="826000" />
       <workItem from="1502120978550" duration="116000" />
       <workItem from="1502144142048" duration="786000" />
-      <workItem from="1502145028505" duration="8236000" />
+      <workItem from="1502145028505" duration="13452000" />
     </task>
     <task id="LOCAL-00001" summary="user registration">
       <created>1501507803422</created>
@@ -566,11 +567,25 @@
       <option name="project" value="LOCAL" />
       <updated>1502192984220</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="bug">
+      <created>1502193220616</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1502193220616</updated>
+    </task>
+    <task id="LOCAL-00015" summary="game is on">
+      <created>1502194332022</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1502194332022</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71355000" />
+    <option name="totallyTimeSpent" value="76571000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1296" height="1000" extended-state="6" />
@@ -587,7 +602,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39747635" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3966292" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -613,7 +628,9 @@
     <MESSAGE value="added game algorithm" />
     <MESSAGE value="xxx to cancel the game" />
     <MESSAGE value="game" />
-    <option name="LAST_COMMIT_MESSAGE" value="game" />
+    <MESSAGE value="bug" />
+    <MESSAGE value="game is on" />
+    <option name="LAST_COMMIT_MESSAGE" value="game is on" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -623,8 +640,18 @@
           <line>38</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/utils/UDPGame.cpp</url>
+          <line>44</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/utils/UDPGame.cpp</url>
+          <line>13</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -868,16 +895,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client_main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="41" column="41" lean-forward="false" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+        <state relative-caret-position="-470">
+          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/UDPGame.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="46" lean-forward="false" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+        <state relative-caret-position="-187">
+          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -886,8 +913,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/TCPMessengerClient.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state relative-caret-position="1291">
+          <caret line="152" column="54" lean-forward="true" selection-start-line="152" selection-start-column="54" selection-end-line="152" selection-end-column="54" />
           <folding />
         </state>
       </provider>

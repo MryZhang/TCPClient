@@ -20,7 +20,7 @@ void UDPGAME::run() {
             close();
         }
         else{
-            this->remote_choose->copy(buffer, sizeof(buffer),0);
+            *this->remote_choose = buffer;
             cout<<endl<<"buffer--->"<< buffer<<endl;
             cout<<endl<<"remote_choose--->"<< remote_choose<<endl;
         }
