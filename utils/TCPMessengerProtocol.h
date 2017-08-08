@@ -22,6 +22,10 @@
 #define SUCCESS                     11
 #define GET_USERS_LIST              12
 #define GAME_SESSION                13
+#define ROCK                        30
+#define PAPER                       31
+#define SCISSORS                    32
+
 
 
 #define TEST_PEER_NAME "test"

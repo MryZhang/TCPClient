@@ -87,14 +87,34 @@ void TCPMessengerClient::run(){
                 this->isConnected = true;
                 break;
             case GAME_SESSION:
-                bool flag = true;
-                UDPGAME * udpgame = new UDPGAME(data , &flag);
-                while (flag){
-                    string msg;
-                    getline(cin,msg);
+                bool running = true;
+                int local_choose_int = 0;
+                string local_choose="0";
+                string remote_choose="0";
+                UDPGAME * udpgame = new UDPGAME(data , &running,&remote_choose,&local_choose, & local_choose_int);
+                TCPMessengerProtocol::readFromServer(command,data,sock);
+                while (running){
+                    if (local_choose_int == 0){
+                        cout<< "1.rock\n2.papre\n3.scissors"<<endl;
+                        cin >> local_choose_int;
+                        switch (local_choose_int){
+                            case 1:
+                                udpgame->sendTo(to_string(ROCK));
+                                break;
+                            case 2:
+                                udpgame->sendTo(to_string(PAPER));
+                                break;
+                            case 3:
+                                udpgame->sendTo(to_string(SCISSORS));
+                                break;
+                        }
+                        //getline(cin,local_choose);
+                    }
+                    else{
+
+                    }
 //                    cin >> msg;
-                    udpgame->sendTo(msg);
-                    msg.clear();
+                    local_choose.clear();
                 }
                 break;
         }

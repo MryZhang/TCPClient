@@ -10,9 +10,13 @@ namespace npl {
         static const int GAME_PORT = 50999;
         UDPSocket *udpSocket;
         string sendtoip;
+        char buffer[1024];
+        string * remote_choose;
+        string * local_choose;
+        int * local_choose_int;
     public:
 
-        UDPGAME(string ip , bool * flag);
+        UDPGAME(string ip , bool * flag , string * remote_choose , string * local_choose , int * local_choose_int);
 
         /**
          * sends the given message to the given peer specified by IP
