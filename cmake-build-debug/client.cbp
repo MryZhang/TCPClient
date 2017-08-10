@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="client">
-				<Option output="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/client.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/client.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 client"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 client"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="client/fast">
-				<Option output="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/client.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/client.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,74 +73,74 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 client/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/omrih/ClionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 client/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Omri/CLionProjects/TCPClient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/Client/TCPMessengerClient.cpp">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/Client/TCPMessengerClient.cpp">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/Client/TCPMessengerClient.h">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/Client/TCPMessengerClient.h">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/client_main.cpp">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/client_main.cpp">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/utils/File.cpp">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/utils/File.cpp">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/utils/File.h">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/utils/File.h">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/utils/FileInterface.cpp">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/utils/FileInterface.cpp">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/utils/FileInterface.h">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/utils/FileInterface.h">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/utils/MThread.cpp">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/utils/MThread.cpp">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/utils/MThread.h">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/utils/MThread.h">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/utils/MultipleTCPSocketListener.cpp">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/utils/MultipleTCPSocketListener.cpp">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/utils/MultipleTCPSocketListener.h">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/utils/MultipleTCPSocketListener.h">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/utils/Socket.cpp">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/utils/Socket.cpp">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/utils/Socket.h">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/utils/Socket.h">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/utils/TCPMessengerProtocol.h">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/utils/TCPMessengerProtocol.h">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/utils/TCPSocket.cpp">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/utils/TCPSocket.cpp">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/utils/TCPSocket.h">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/utils/TCPSocket.h">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/utils/UDPGame.cpp">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/utils/UDPGame.cpp">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/utils/UDPGame.h">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/utils/UDPGame.h">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/utils/UDPSocket.cpp">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/utils/UDPSocket.cpp">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/utils/UDPSocket.h">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/utils/UDPSocket.h">
 			<Option target="client"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/omrih/ClionProjects/TCPClient/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/Omri/CLionProjects/TCPClient/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

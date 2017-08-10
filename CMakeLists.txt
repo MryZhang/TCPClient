@@ -4,19 +4,8 @@ project(TCPClient)
 set(CMAKE_CXX_STANDARD 11)
 
 set(SOURCE_FILES
-        .idea/inspectionProfiles/Project_Default.xml
-        .idea/misc.xml
-        .idea/modules.xml
-        .idea/untitled.iml
-        .idea/vcs.xml
-        .idea/workspace.xml
         Client/TCPMessengerClient.cpp
         Client/TCPMessengerClient.h
-        cmake-build-debug/client.cbp
-        cmake-build-debug/cmake_install.cmake
-        cmake-build-debug/CMakeCache.txt
-        cmake-build-debug/gdb.exe.stackdump
-        cmake-build-debug/Makefile
         utils/File.cpp
         utils/File.h
         utils/FileInterface.cpp
@@ -34,8 +23,6 @@ set(SOURCE_FILES
         utils/UDPGame.h
         utils/UDPSocket.cpp
         utils/UDPSocket.h
-        .gitignore
-        client_main.cpp
-        CMakeLists.txt)
+        client_main.cpp)
 
 add_executable(TCPClient ${SOURCE_FILES})

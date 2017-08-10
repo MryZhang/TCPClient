@@ -20,7 +20,7 @@ void UDPGAME::run() {
             close();
         }
         else{
-//            *this->remote_choose = buffer;
+//            *(this->remote_choose) = stoi(buffer);
             remote = stoi(buffer);
 //            cout<<endl<<"buffer--->"<< buffer<<endl;
 //            cout<<endl<<"remote_choose--->"<< *remote_choose<<endl;
@@ -30,13 +30,11 @@ void UDPGAME::run() {
 
 }
 
-UDPGAME::UDPGAME(string ip , bool * flag , string * remote_choose, string * local_choose,int * local_choose_int) {
+UDPGAME::UDPGAME(string ip , bool * flag , string * remote_choose) {
     // init the messenger
     udpSocket = new UDPSocket(GAME_PORT);
     running = flag;
     this->remote_choose = remote_choose;
-    this->local_choose = local_choose;
-    this->local_choose_int = local_choose_int;
     sendtoip = ip;
     this->start();
 }
