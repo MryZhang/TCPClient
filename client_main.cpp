@@ -22,7 +22,8 @@ void printInstructions() {
 int main() {
 
     cout << "Welcome to TCP Client messenger" << endl;
-    TCPMessengerClient* client = new TCPMessengerClient();
+    bool reamMainCmd = true;
+    TCPMessengerClient* client = new TCPMessengerClient(&reamMainCmd);
     printInstructions();
 
     while (true) {
@@ -30,7 +31,9 @@ int main() {
 //        msg.clear();
         string command;
 //        command.clear();
-        getline(cin,command);
+        if (reamMainCmd){
+            getline(cin,command);
+        }
 //        cin >> command;
 
         if (command == "c") {
@@ -44,16 +47,16 @@ int main() {
             client->login_or_register();
 //            printInstructions();
         } else if (command == "o") {
-            string username;
-            username.clear();
-            getline(cin,username);
+                string username;
+                username.clear();
+                getline(cin,username);
 //            cin >> username;
-            client->openSession(username);
+                client->openSession(username);
 //            username.clear();
-            while(true){
+                while(true){
 //                cout << "inside" << endl;
-                // wait;
-            }
+                    // wait;
+                }
         } else if (command == "s") {
             getline(cin, msg);
             if (msg.size() > 0 && msg[0] == ' ')

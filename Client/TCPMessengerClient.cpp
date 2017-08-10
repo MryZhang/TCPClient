@@ -7,10 +7,10 @@
 using namespace npl;
 
 
-TCPMessengerClient::TCPMessengerClient(){
+TCPMessengerClient::TCPMessengerClient(bool * reamMainCmd){
     this->sock = NULL;
     this->stopRun = false;
-
+    this->reamMainCmd = reamMainCmd;
 }
 
 
@@ -87,22 +87,27 @@ void TCPMessengerClient::run(){
                 this->isConnected = true;
                 break;
             case GAME_SESSION:
+                *reamMainCmd = false;
                 bool running = true;
                 int local_choose_int = 0;
                 int remote_choose_int = 0;
                 string local_choose="0";
                 string x = "0";
                 string remote_choose="0";
-                UDPGAME * udpgame = new UDPGAME(data , &running,&remote_choose);
+                UDPGAME * udpgame = new UDPGAME(data , &running);
                 while (running){
                     if (local_choose_int == 0){
                         cout<< "1.rock\n2.papre\n3.scissors"<<endl;
-//                        cin >> local_choose;
-                        cin.clear();
-                        fflush(stdin);
-                        local_choose.clear();
-                        getline(cin,local_choose);
+                        do{
+                            cout << "start while" << endl;
+                            cin.clear();
+                            fflush(stdin);
+                            local_choose.clear();
+                            getline(cin,local_choose);
+                            cout << local_choose<<endl;
+                        }while (local_choose.empty());
                         local_choose_int = stoi(local_choose);
+                        cout << "entrting switch" << endl;
                         switch (local_choose_int){
                             case 1:
                                 udpgame->sendTo(to_string(ROCK));
@@ -117,98 +122,44 @@ void TCPMessengerClient::run(){
                                 local_choose_int = SCISSORS;
                                 break;
                         }
-                        //getline(cin,local_choose);
                     }
+                    cout << "before second if - maybe  i dot a remote message? udpgame->remote = " << udpgame->remote << endl;
                     if (local_choose_int != 0 && udpgame->remote != 0){
                         remote_choose_int = udpgame->remote;
+                        cout << "cheking winner" << endl;
                         if(local_choose_int == ROCK && remote_choose_int == SCISSORS){
-//                                udpgame->sendTo("you lost!");
                             cout<< "you win" << endl;
                         }
                         else if(local_choose_int == ROCK && remote_choose_int == PAPER){
-//                                udpgame->sendTo("you win!");
                             cout<< "you lost" << endl;
                         }
                         else if(local_choose_int == ROCK && remote_choose_int == ROCK){
-//                                udpgame->sendTo("TIE!");
                             cout<< "TIE!" << endl;
                         }
                         else if(local_choose_int == PAPER && remote_choose_int == ROCK){
-                            udpgame->sendTo("you lost!");
                             cout<< "you win" << endl;
                         }
                         else if(local_choose_int == PAPER && remote_choose_int == SCISSORS){
-//                                udpgame->sendTo("you win!");
                             cout<< "you lost" << endl;
                         }
                         else if(local_choose_int == PAPER && remote_choose_int == PAPER){
-//                                udpgame->sendTo("TIE!");
                             cout<< "TIE!" << endl;
                         }
                         else if(local_choose_int == SCISSORS && remote_choose_int == ROCK){
-                            udpgame->sendTo("you win!");
                             cout<< "you lost" << endl;
                         }
                         else if(local_choose_int == SCISSORS && remote_choose_int == PAPER){
-//                                udpgame->sendTo("you lost!");
                             cout<< "you win" << endl;
                         }
                         else if(local_choose_int == SCISSORS && remote_choose_int == SCISSORS){
-//                                udpgame->sendTo("TIE!");
                             cout<< "TIE!" << endl;
                         }
+                        cout << "initializing .... after the winner if" << endl;
                         local_choose_int = 0;
                         remote_choose_int = 0;
                         local_choose = "0";
                         remote_choose = "0";
                     }
-//                    else{
-//                        if (remote_choose.compare("0") != 0){
-//                            remote_choose_int = stoi(remote_choose);
-//                            if(local_choose_int == ROCK and remote_choose_int == SCISSORS){
-////                                udpgame->sendTo("you lost!");
-//                                cout<< "you win" << endl;
-//                            }
-//                            else if(local_choose_int == ROCK and remote_choose_int == PAPER){
-////                                udpgame->sendTo("you win!");
-//                                cout<< "you lost" << endl;
-//                            }
-//                            else if(local_choose_int == ROCK and remote_choose_int == ROCK){
-////                                udpgame->sendTo("TIE!");
-//                                cout<< "TIE!" << endl;
-//                            }
-//                            else if(local_choose_int == PAPER and remote_choose_int == ROCK){
-//                                udpgame->sendTo("you lost!");
-//                                cout<< "you win" << endl;
-//                            }
-//                            else if(local_choose_int == PAPER and remote_choose_int == SCISSORS){
-////                                udpgame->sendTo("you win!");
-//                                cout<< "you lost" << endl;
-//                            }
-//                            else if(local_choose_int == PAPER and remote_choose_int == PAPER){
-////                                udpgame->sendTo("TIE!");
-//                                cout<< "TIE!" << endl;
-//                            }
-//                            else if(local_choose_int == SCISSORS and remote_choose_int == ROCK){
-//                                udpgame->sendTo("you win!");
-//                                cout<< "you lost" << endl;
-//                            }
-//                            else if(local_choose_int == SCISSORS and remote_choose_int == PAPER){
-////                                udpgame->sendTo("you lost!");
-//                                cout<< "you win" << endl;
-//                            }
-//                            else if(local_choose_int == SCISSORS and remote_choose_int == SCISSORS){
-////                                udpgame->sendTo("TIE!");
-//                                cout<< "TIE!" << endl;
-//                            }
-//                            local_choose_int = 0;
-//                            remote_choose_int = 0;
-//                            local_choose = "0";
-//                            remote_choose = "0";
-//                        }
-//                    }
-//                    cin >> msg;
-                    local_choose.clear();
                 }
                 break;
         }

@@ -24,8 +24,9 @@ namespace npl {
         TCPSocket* sock;
         bool stopRun ;
         bool isConnected = false;
+        bool * reamMainCmd;
     public:
-        TCPMessengerClient();
+        TCPMessengerClient(bool * reamMainCmd);
         void connect(const string& ip);
         void openSession(const string& username);
         void send(const string msg);
