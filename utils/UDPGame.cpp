@@ -20,9 +20,10 @@ void UDPGAME::run() {
             close();
         }
         else{
-            *this->remote_choose = buffer;
-            cout<<endl<<"buffer--->"<< buffer<<endl;
-            cout<<endl<<"remote_choose--->"<< remote_choose<<endl;
+//            *this->remote_choose = buffer;
+            remote = stoi(buffer);
+//            cout<<endl<<"buffer--->"<< buffer<<endl;
+//            cout<<endl<<"remote_choose--->"<< *remote_choose<<endl;
         }
     }
     cout << "closing receiver thread" << endl;

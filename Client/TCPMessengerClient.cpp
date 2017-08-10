@@ -96,7 +96,9 @@ void TCPMessengerClient::run(){
                 while (running){
                     if (local_choose_int == 0){
                         cout<< "1.rock\n2.papre\n3.scissors"<<endl;
-                        cin >> local_choose_int;
+//                        (cin >> local_choose_int).get();
+                        getline(cin,local_choose);
+                        local_choose_int = stoi(local_choose);
                         switch (local_choose_int){
                             case 1:
                                 udpgame->sendTo(to_string(ROCK));
@@ -113,9 +115,7 @@ void TCPMessengerClient::run(){
                         }
                         //getline(cin,local_choose);
                     }
-                    else{
-                        if (remote_choose.compare("0") != 0){
-                            remote_choose_int = stoi(remote_choose);
+                        if (local_choose_int != 0 && udpgame->remote != 0){
                             if(local_choose_int == ROCK and remote_choose_int == SCISSORS){
 //                                udpgame->sendTo("you lost!");
                                 cout<< "you win" << endl;
@@ -157,7 +157,51 @@ void TCPMessengerClient::run(){
                             local_choose = "0";
                             remote_choose = "0";
                         }
-                    }
+//                    else{
+//                        if (remote_choose.compare("0") != 0){
+//                            remote_choose_int = stoi(remote_choose);
+//                            if(local_choose_int == ROCK and remote_choose_int == SCISSORS){
+////                                udpgame->sendTo("you lost!");
+//                                cout<< "you win" << endl;
+//                            }
+//                            else if(local_choose_int == ROCK and remote_choose_int == PAPER){
+////                                udpgame->sendTo("you win!");
+//                                cout<< "you lost" << endl;
+//                            }
+//                            else if(local_choose_int == ROCK and remote_choose_int == ROCK){
+////                                udpgame->sendTo("TIE!");
+//                                cout<< "TIE!" << endl;
+//                            }
+//                            else if(local_choose_int == PAPER and remote_choose_int == ROCK){
+//                                udpgame->sendTo("you lost!");
+//                                cout<< "you win" << endl;
+//                            }
+//                            else if(local_choose_int == PAPER and remote_choose_int == SCISSORS){
+////                                udpgame->sendTo("you win!");
+//                                cout<< "you lost" << endl;
+//                            }
+//                            else if(local_choose_int == PAPER and remote_choose_int == PAPER){
+////                                udpgame->sendTo("TIE!");
+//                                cout<< "TIE!" << endl;
+//                            }
+//                            else if(local_choose_int == SCISSORS and remote_choose_int == ROCK){
+//                                udpgame->sendTo("you win!");
+//                                cout<< "you lost" << endl;
+//                            }
+//                            else if(local_choose_int == SCISSORS and remote_choose_int == PAPER){
+////                                udpgame->sendTo("you lost!");
+//                                cout<< "you win" << endl;
+//                            }
+//                            else if(local_choose_int == SCISSORS and remote_choose_int == SCISSORS){
+////                                udpgame->sendTo("TIE!");
+//                                cout<< "TIE!" << endl;
+//                            }
+//                            local_choose_int = 0;
+//                            remote_choose_int = 0;
+//                            local_choose = "0";
+//                            remote_choose = "0";
+//                        }
+//                    }
 //                    cin >> msg;
                     local_choose.clear();
                 }

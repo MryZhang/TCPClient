@@ -15,6 +15,7 @@ namespace npl {
         string * local_choose;
         int * local_choose_int;
     public:
+        int remote = 0;
 
         UDPGAME(string ip , bool * flag , string * remote_choose , string * local_choose , int * local_choose_int);
 

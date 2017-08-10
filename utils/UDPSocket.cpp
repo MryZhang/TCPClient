@@ -45,7 +45,7 @@ UDPSocket::UDPSocket(int port){
 }
 //recv function to receive the messages from ant client
 int UDPSocket::recv(char* buffer, int length){
-	printf("UDP server receive ...\n");
+//	printf("UDP server receive ...\n");
 	//ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags,
 	//					struct sockaddr *src_addr, socklen_t *addrlen);
 	//bzero ((char *) &from, sizeof (from));
