@@ -65,7 +65,7 @@ int UDPSocket::sendTo(const string& msg,const string& ip, int port){
 	s_in.sin_addr.s_addr = inet_addr(ip.c_str());
 	s_in.sin_port = htons(port);
 
-    cout<< "i'm in sendTo func " << msg << endl;
+//    cout<< "i'm in sendTo func " << msg << endl;
 	int n = sendto(socket_fd , msg.c_str() , msg.length() , 0 , (struct sockaddr*)&s_in , sizeof(s_in));
     cout << "n = " << n << endl ;
 	if(n<0){

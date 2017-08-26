@@ -12,8 +12,8 @@ void UDPGAME::run() {
 //        char buffer[1024];
         memset(buffer, '\0', sizeof(buffer));
         int n = udpSocket->recv(buffer, sizeof(buffer));
-        cout << "in udpgame - run n = " << n <<endl;
-        cout << "buffer = " << buffer << endl;
+//        cout << "in udpgame - run n = " << n <<endl;
+//        cout << "buffer = " << buffer << endl;
         if(n < 0){
             break;
         }
@@ -24,7 +24,7 @@ void UDPGAME::run() {
         else{
 //            *(this->remote_choose) = stoi(buffer);
             remote = stoi(buffer);
-            cout << "remote = " << remote << endl;
+//            cout << "remote = " << remote << endl;
 //            cout<<endl<<"buffer--->"<< buffer<<endl;
 //            cout<<endl<<"remote_choose--->"<< *remote_choose<<endl;
         }
@@ -38,6 +38,7 @@ UDPGAME::UDPGAME(string ip , bool * flag ) {
     udpSocket = new UDPSocket(GAME_PORT);
     running = flag;
     sendtoip = ip;
+    cout << "remote ip IN UDP : " << ip << endl;
     this->start();
 }
 

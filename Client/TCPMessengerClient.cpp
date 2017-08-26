@@ -26,7 +26,7 @@ void TCPMessengerClient::connect(const string& ip) {
 }
 
 void TCPMessengerClient::openSession(const string& username) {
-    cout << "openSession with server" << username << endl << flush;
+    cout << "openSession with server " << username << endl << flush;
     TCPMessengerProtocol::sendToServer(OPEN_SESSION_WITH_PEER, username, sock);
 
 }
@@ -90,6 +90,7 @@ void TCPMessengerClient::run(){
                 *(this->game_on) = true;
                 this->remote_ip = data;
                 cout << "game session is pending!" << endl;
+                cout << "data = " << data << endl;
 //                bool running = true;
 //                int local_choose_int = 0;
 //                int remote_choose_int = 0;

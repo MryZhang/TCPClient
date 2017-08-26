@@ -23,6 +23,7 @@ void printInstructions() {
 
 int main() {
     bool game_on = false;
+    bool is_o_pressed = false;
 
     cout << "Welcome to TCP Client messenger" << endl;
     TCPMessengerClient* client = new TCPMessengerClient(&game_on);
@@ -33,7 +34,9 @@ int main() {
 //        msg.clear();
         string command;
 //        command.clear();
-        getline(cin,command);
+        if (!is_o_pressed){
+            getline(cin,command);
+        }
 //        cin >> command;
 
         if (command == "c") {
@@ -43,17 +46,19 @@ int main() {
 //            if (msg.size() > 0 && msg[0] == ' ')
 //                msg.erase(0, 1);
 //            client->connect(ip);
-            client->connect("192.168.1.50");
+            client->connect("192.168.1.13");
             client->login_or_register();
 //            printInstructions();
-        } else if (command == "y" && game_on == true) {
+        } else if ((command == "y" && game_on == true) || (is_o_pressed && game_on)) {
             bool running = true;
             int local_choose_int = 0;
             int remote_choose_int = 0;
             string local_choose="0";
             string x = "0";
             string remote_choose="0";
-            UDPGAME * udpgame = new UDPGAME(client->remote_ip , &running,&remote_choose);
+//            cout << "IN MAIN remote ip : " << client->remote_ip << endl;
+            while (client->remote_ip.compare("") == 0){}
+            UDPGAME * udpgame = new UDPGAME(client->remote_ip , &running);
             while (running){
                 if (local_choose_int == 0){
                     cout<< "1.rock\n2.papre\n3.scissors"<<endl;
@@ -82,39 +87,30 @@ int main() {
                 if (local_choose_int != 0 && udpgame->remote != 0){
                     remote_choose_int = udpgame->remote;
                     if(local_choose_int == ROCK && remote_choose_int == SCISSORS){
-//                                udpgame->sendTo("you lost!");
                         cout<< "you win" << endl;
                     }
                     else if(local_choose_int == ROCK && remote_choose_int == PAPER){
-//                                udpgame->sendTo("you win!");
                         cout<< "you lost" << endl;
                     }
                     else if(local_choose_int == ROCK && remote_choose_int == ROCK){
-//                                udpgame->sendTo("TIE!");
                         cout<< "TIE!" << endl;
                     }
                     else if(local_choose_int == PAPER && remote_choose_int == ROCK){
-                        udpgame->sendTo("you lost!");
                         cout<< "you win" << endl;
                     }
                     else if(local_choose_int == PAPER && remote_choose_int == SCISSORS){
-//                                udpgame->sendTo("you win!");
                         cout<< "you lost" << endl;
                     }
                     else if(local_choose_int == PAPER && remote_choose_int == PAPER){
-//                                udpgame->sendTo("TIE!");
                         cout<< "TIE!" << endl;
                     }
                     else if(local_choose_int == SCISSORS && remote_choose_int == ROCK){
-                        udpgame->sendTo("you win!");
                         cout<< "you lost" << endl;
                     }
                     else if(local_choose_int == SCISSORS && remote_choose_int == PAPER){
-//                                udpgame->sendTo("you lost!");
                         cout<< "you win" << endl;
                     }
                     else if(local_choose_int == SCISSORS && remote_choose_int == SCISSORS){
-//                                udpgame->sendTo("TIE!");
                         cout<< "TIE!" << endl;
                     }
                     local_choose_int = 0;
@@ -124,16 +120,14 @@ int main() {
                 }
             }
         } else if (command == "o") {
+            game_on = true;
+            is_o_pressed = true;
             string username;
             username.clear();
             getline(cin,username);
 //            cin >> username;
             client->openSession(username);
 //            username.clear();
-            while(true){
-//                cout << "inside" << endl;
-                // wait;
-            }
         } else if (command == "s") {
             getline(cin, msg);
             if (msg.size() > 0 && msg[0] == ' ')
