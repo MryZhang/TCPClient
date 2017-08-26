@@ -24,8 +24,10 @@ namespace npl {
         TCPSocket* sock;
         bool stopRun ;
         bool isConnected = false;
+        bool * game_on;
     public:
-        TCPMessengerClient();
+        string remote_ip;
+        TCPMessengerClient(bool * game_on);
         void connect(const string& ip);
         void openSession(const string& username);
         void send(const string msg);
