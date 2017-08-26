@@ -11,14 +11,19 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9137cc89-0da1-4046-a54d-50465ec549a7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="9137cc89-0da1-4046-a54d-50465ec549a7" name="Default" comment="changed udp location from TCP to main&#10;added Y to main to start the game">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/TCPMessengerClient.cpp" afterPath="$PROJECT_DIR$/Client/TCPMessengerClient.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/TCPMessengerClient.h" afterPath="$PROJECT_DIR$/Client/TCPMessengerClient.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client_main.cpp" afterPath="$PROJECT_DIR$/client_main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/UDPGame.cpp" afterPath="$PROJECT_DIR$/utils/UDPGame.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/UDPGame.h" afterPath="$PROJECT_DIR$/utils/UDPGame.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="client_main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="client_main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client_main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            <state relative-caret-position="68">
+              <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
               <folding>
                 <element signature="e#41#79#0" expanded="true" />
               </folding>
@@ -42,21 +47,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TCPMessengerProtocol.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/TCPMessengerProtocol.h">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UDPGame.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/UDPGame.cpp">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TCPSocket.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/TCPSocket.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -65,9 +80,21 @@
       <file leaf-file-name="UDPGame.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/UDPGame.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="238">
+              <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UDPGame.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/UDPGame.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,8 +102,8 @@
       <file leaf-file-name="TCPMessengerClient.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/TCPMessengerClient.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+            <state relative-caret-position="1513">
+              <caret line="89" column="36" lean-forward="false" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -85,8 +112,8 @@
       <file leaf-file-name="TCPMessengerClient.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/TCPMessengerClient.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            <state relative-caret-position="476">
+              <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
               <folding>
                 <element signature="e#119#138#0" expanded="true" />
               </folding>
@@ -100,7 +127,13 @@
     <findStrings>
       <find>Error nam</find>
       <find>PORT</find>
+      <find>User/ClionProjects/TCPClient/cmake-build-debug</find>
+      <find>c/Users/User</find>
+      <find>getline</find>
     </findStrings>
+    <replaceStrings>
+      <replace>c/Users/omrih</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -140,16 +173,18 @@
         <option value="$PROJECT_DIR$/utils/UDPMessenger.cpp" />
         <option value="$PROJECT_DIR$/utils/UDPMessenger.h" />
         <option value="$PROJECT_DIR$/utils/game.h" />
-        <option value="$PROJECT_DIR$/utils/TCPMessengerProtocol.h" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-        <option value="$PROJECT_DIR$/utils/UDPSocket.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/client.cbp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
+        <option value="$PROJECT_DIR$/utils/TCPMessengerProtocol.h" />
+        <option value="$PROJECT_DIR$/utils/UDPSocket.cpp" />
         <option value="$PROJECT_DIR$/utils/UDPGame.h" />
         <option value="$PROJECT_DIR$/utils/UDPGame.cpp" />
         <option value="$PROJECT_DIR$/Client/TCPMessengerClient.h" />
         <option value="$PROJECT_DIR$/Client/TCPMessengerClient.cpp" />
         <option value="$PROJECT_DIR$/client_main.cpp" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -161,10 +196,39 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="411" />
-    <option name="y" value="-17" />
+    <option name="x" value="-1288" />
+    <option name="y" value="-264" />
     <option name="width" value="1296" />
     <option name="height" value="1000" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -197,6 +261,11 @@
             <path>
               <item name="TCPClient" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="TCPClient" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TCPClient" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="TCPClient" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -208,130 +277,18 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/omrih/ClionProjects/untitled/TCPSocket.h" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/FinalProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TCPServer" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="GO_FMT" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\omrih\ClionProjects\untitled" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\omrih\ClionProjects\client\utils" />
       <recent name="C:\Users\omrih\ClionProjects\untitled\utilities" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\omrih\ClionProjects\untitled" />
-    </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Client/TCPMessengerClient.cpp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/utils/UDPGame.cpp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/utils/UDPGame.h</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/utils/UDPSocket.cpp</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -345,8 +302,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Build All">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TCPClient" TARGET_NAME="TCPClient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="TCPClient" RUN_TARGET_NAME="TCPClient">
+  <component name="RunManager" selected="Application.TCPClient">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+    </configuration>
+    <configuration name="TCPClient" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TCPClient" TARGET_NAME="TCPClient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="TCPClient" RUN_TARGET_NAME="TCPClient">
       <envs />
     </configuration>
     <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
@@ -529,9 +489,16 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.TCPClient" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -550,11 +517,19 @@
       <workItem from="1501594424049" duration="754000" />
       <workItem from="1501596251402" duration="5742000" />
       <workItem from="1501610188492" duration="6652000" />
-      <workItem from="1501683899245" duration="4095000" />
-      <workItem from="1501922065958" duration="90000" />
-      <workItem from="1502144341207" duration="2685000" />
-      <workItem from="1502147521156" duration="9288000" />
-      <workItem from="1502380962251" duration="4892000" />
+      <workItem from="1501683899245" duration="4125000" />
+      <workItem from="1502118704045" duration="25000" />
+      <workItem from="1502118784337" duration="826000" />
+      <workItem from="1502120978550" duration="116000" />
+      <workItem from="1502144142048" duration="786000" />
+      <workItem from="1502145028505" duration="17456000" />
+      <workItem from="1502380950189" duration="2860000" />
+      <workItem from="1502383963367" duration="14000" />
+      <workItem from="1502383981998" duration="2888000" />
+      <workItem from="1502389540500" duration="2011000" />
+      <workItem from="1502735919669" duration="597000" />
+      <workItem from="1503751047275" duration="4076000" />
+      <workItem from="1503755175098" duration="194000" />
     </task>
     <task id="LOCAL-00001" summary="user registration">
       <created>1501507803422</created>
@@ -619,36 +594,91 @@
       <option name="project" value="LOCAL" />
       <updated>1501616591102</updated>
     </task>
-    <task id="LOCAL-00010" summary="game working!&#10;DONT USE NUMPAD ENTER!">
-      <created>1502383832063</created>
+    <task id="LOCAL-00010" summary="added game algorithm">
+      <created>1501711104681</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1502383832063</updated>
+      <updated>1501711104681</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="xxx to cancel the game">
+      <created>1502146783171</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1502146783171</updated>
+    </task>
+    <task id="LOCAL-00012" summary="xxx to cancel the game">
+      <created>1502146981484</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1502146981484</updated>
+    </task>
+    <task id="LOCAL-00013" summary="game">
+      <created>1502192984220</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1502192984220</updated>
+    </task>
+    <task id="LOCAL-00014" summary="bug">
+      <created>1502193220616</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1502193220616</updated>
+    </task>
+    <task id="LOCAL-00015" summary="game is on">
+      <created>1502194332022</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1502194332022</updated>
+    </task>
+    <task id="LOCAL-00016" summary="game is on">
+      <created>1502223713644</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1502223713644</updated>
+    </task>
+    <task id="LOCAL-00017" summary="game is on">
+      <created>1502380378449</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1502380378449</updated>
+    </task>
+    <task id="LOCAL-00018" summary="changed udp location from TCP to main&#10;added Y to main to start the game">
+      <created>1503755302218</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1503755302218</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78291000" />
+    <option name="totallyTimeSpent" value="93215000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1288" y="-264" width="1296" height="1000" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2390625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19453125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3730337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5078652" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3154574" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3988764" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51892745" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3966292" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3955056" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3696629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -671,8 +701,12 @@
     <MESSAGE value="added UDP connection" />
     <MESSAGE value="added game files" />
     <MESSAGE value="added game algorithm" />
-    <MESSAGE value="game working!&#10;DONT USE NUMPAD ENTER!" />
-    <option name="LAST_COMMIT_MESSAGE" value="game working!&#10;DONT USE NUMPAD ENTER!" />
+    <MESSAGE value="xxx to cancel the game" />
+    <MESSAGE value="game" />
+    <MESSAGE value="bug" />
+    <MESSAGE value="game is on" />
+    <MESSAGE value="changed udp location from TCP to main&#10;added Y to main to start the game" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed udp location from TCP to main&#10;added Y to main to start the game" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -682,16 +716,18 @@
           <line>38</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Client/TCPMessengerClient.cpp</url>
+          <line>89</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="25" />
+      <option name="time" value="27" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="CMakeRunConfiguration">
-        <watch expression="*remote_choose" language="ObjectiveC" />
-      </configuration>
-    </watches-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/utilities/TCPSocket.cpp" />
     <entry file="file://$PROJECT_DIR$/utilities/Socket.cpp" />
     <entry file="file://$PROJECT_DIR$/utilities/Socket.h" />
     <entry file="file://$PROJECT_DIR$/main_sock.cpp" />
@@ -759,16 +795,15 @@
     <entry file="file://$PROJECT_DIR$/Server/TCPMessengerServer.h" />
     <entry file="file://$PROJECT_DIR$/Server/Broker.h" />
     <entry file="file://$PROJECT_DIR$/Server/Dispatcher.cpp" />
-    <entry file="file://C:/cygwin64/usr/include/sys/unistd.h" />
-    <entry file="file://$PROJECT_DIR$/Server/Broker.cpp" />
-    <entry file="file://$PROJECT_DIR$/server_main.cpp" />
-    <entry file="file://$PROJECT_DIR$/utils/TCPSocket.cpp">
+    <entry file="file://C:/cygwin64/usr/include/sys/unistd.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        <state relative-caret-position="3706">
+          <caret line="218" column="85" lean-forward="false" selection-start-line="218" selection-start-column="85" selection-end-line="218" selection-end-column="85" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Broker.cpp" />
+    <entry file="file://$PROJECT_DIR$/server_main.cpp" />
     <entry file="file://$PROJECT_DIR$/utils/FileInterface.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -776,8 +811,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/cygwin64/usr/src/debug/gcc-5.4.0-1/libstdc++-v3/include/bits/basic_string.h" />
-    <entry file="file://C:/cygwin64/usr/src/debug/gcc-5.4.0-1/libstdc++-v3/include/bits/allocator.h" />
+    <entry file="file://C:/cygwin64/usr/src/debug/gcc-5.4.0-1/libstdc++-v3/include/bits/basic_string.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="2689" column="0" lean-forward="false" selection-start-line="2689" selection-start-column="0" selection-end-line="2689" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/cygwin64/usr/src/debug/gcc-5.4.0-1/libstdc++-v3/include/bits/allocator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils/game.h" />
     <entry file="file://$PROJECT_DIR$/utils/game.cpp" />
     <entry file="file://$PROJECT_DIR$/utils/MThread.cpp">
@@ -787,74 +834,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/cygwin64/usr/include/sys/socket.h" />
+    <entry file="file://C:/cygwin64/usr/include/sys/socket.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils/Socket.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/cygwin64/usr/src/debug/gcc-5.4.0-1/libstdc++-v3/include/bits/basic_string.tcc" />
-    <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.8.0-1/winsup/cygwin/cygtls.cc" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TCPClient.dir/build.make">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="352" column="32" lean-forward="false" selection-start-line="352" selection-start-column="2" selection-end-line="352" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="23" lean-forward="false" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/UDPSocket.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="408">
           <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/cygwin64/usr/src/debug/cygwin-2.8.0-1/winsup/cygwin/cygtls.cc">
+    <entry file="file://C:/cygwin64/usr/src/debug/gcc-5.4.0-1/libstdc++-v3/include/bits/basic_string.tcc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="10472">
+          <caret line="616" column="0" lean-forward="false" selection-start-line="616" selection-start-column="0" selection-end-line="616" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/cygwin64/usr/src/debug/cygwin-2.8.0-1/winsup/cygwin/net.cc">
+    <entry file="file://C:/cygwin64/usr/src/debug/cygwin-2.8.0-1/winsup/cygwin/cygtls.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="764" column="0" lean-forward="false" selection-start-line="764" selection-start-column="0" selection-end-line="764" selection-end-column="0" />
+        <state relative-caret-position="765">
+          <caret line="45" column="21" lean-forward="false" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/cygwin64/usr/src/debug/cygwin-2.8.0-1/winsup/cygwin/thread.cc">
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/untitled.exe.stackdump" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/Server.cbp" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="1992" column="0" lean-forward="false" selection-start-line="1992" selection-start-column="0" selection-end-line="1992" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1428">
+          <caret line="84" column="68" lean-forward="false" selection-start-line="84" selection-start-column="68" selection-end-line="84" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/cygwin64/usr/src/debug/cygwin-2.8.0-1/winsup/cygwin/miscfuncs.cc">
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/client.cbp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="458" column="0" lean-forward="false" selection-start-line="458" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="2414">
+          <caret line="142" column="47" lean-forward="false" selection-start-line="142" selection-start-column="47" selection-end-line="142" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="326" column="43" lean-forward="false" selection-start-line="326" selection-start-column="43" selection-end-line="326" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/TCPMessengerProtocol.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/UDPSocket.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="61" column="42" lean-forward="true" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+        <state relative-caret-position="499">
+          <caret line="48" column="7" lean-forward="false" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/cygwin64/usr/src/debug/gcc-5.4.0-1/libstdc++-v3/include/ext/stdio_sync_filebuf.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2261">
+          <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="48" lean-forward="false" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/UDPGame.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/TCPSocket.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/TCPMessengerClient.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding>
+            <element signature="e#119#138#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -866,79 +956,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/bits/basic_string.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="5259" column="0" lean-forward="false" selection-start-line="5259" selection-start-column="0" selection-end-line="5259" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/cygwin64/usr/src/debug/gcc-5.4.0-1/libstdc++-v3/libsupc++/eh_throw.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="84" column="56" lean-forward="true" selection-start-line="84" selection-start-column="56" selection-end-line="84" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/UDPGame.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        <state relative-caret-position="238">
+          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/UDPGame.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/TCPMessengerProtocol.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/TCPMessengerClient.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-          <folding>
-            <element signature="e#119#138#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/TCPMessengerClient.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        <state relative-caret-position="1513">
+          <caret line="89" column="36" lean-forward="false" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client_main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        <state relative-caret-position="68">
+          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
           <folding>
             <element signature="e#41#79#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
