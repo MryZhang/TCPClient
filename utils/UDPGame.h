@@ -11,11 +11,10 @@ namespace npl {
         UDPSocket *udpSocket;
         string sendtoip;
         char buffer[1024];
-        string * remote_choose;
     public:
         int remote = 0;
 
-        UDPGAME(string ip , bool * flag , string * remote_choose);
+        UDPGAME(string ip , bool * flag);
 
         /**
          * sends the given message to the given peer specified by IP

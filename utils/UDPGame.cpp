@@ -12,6 +12,8 @@ void UDPGAME::run() {
 //        char buffer[1024];
         memset(buffer, '\0', sizeof(buffer));
         int n = udpSocket->recv(buffer, sizeof(buffer));
+        cout << "in udpgame - run n = " << n <<endl;
+        cout << "buffer = " << buffer << endl;
         if(n < 0){
             break;
         }
@@ -22,6 +24,7 @@ void UDPGAME::run() {
         else{
 //            *(this->remote_choose) = stoi(buffer);
             remote = stoi(buffer);
+            cout << "remote = " << remote << endl;
 //            cout<<endl<<"buffer--->"<< buffer<<endl;
 //            cout<<endl<<"remote_choose--->"<< *remote_choose<<endl;
         }
@@ -30,11 +33,10 @@ void UDPGAME::run() {
 
 }
 
-UDPGAME::UDPGAME(string ip , bool * flag , string * remote_choose) {
+UDPGAME::UDPGAME(string ip , bool * flag ) {
     // init the messenger
     udpSocket = new UDPSocket(GAME_PORT);
     running = flag;
-    this->remote_choose = remote_choose;
     sendtoip = ip;
     this->start();
 }
@@ -52,11 +54,13 @@ void UDPGAME::reply(const string& msg) {
 }
 
 void UDPGAME::close() {
+    cout << "closing for some reason" << endl;
     udpSocket->close();
     waitForThread();
     delete udpSocket;
     udpSocket = NULL;
     running = false;
+    cout << "closed!" << endl;
 }
 
 bool UDPGAME::isRunning() {
