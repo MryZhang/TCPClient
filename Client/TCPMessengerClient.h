@@ -25,9 +25,10 @@ namespace npl {
         bool stopRun ;
         bool isConnected = false;
         bool * game_on;
+        int *ref_acc;
     public:
         string remote_ip;
-        TCPMessengerClient(bool * game_on);
+        TCPMessengerClient(bool * game_on,int *ref_acc);
         void connect(const string& ip);
         void openSession(const string& username);
         void send(const string msg);

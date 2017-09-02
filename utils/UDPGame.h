@@ -14,7 +14,7 @@ namespace npl {
     public:
         int remote = 0;
 
-        UDPGAME(string ip , bool * flag);
+        UDPGAME(string ip, bool *flag);
 
         /**
          * sends the given message to the given peer specified by IP

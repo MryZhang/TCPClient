@@ -7,10 +7,11 @@
 using namespace npl;
 
 
-TCPMessengerClient::TCPMessengerClient(bool * game_on){
+TCPMessengerClient::TCPMessengerClient(bool * game_on, int *ref_acc){
     this->sock = NULL;
     this->stopRun = false;
     this->game_on = game_on;
+    this->ref_acc = ref_acc;
 }
 
 
@@ -82,6 +83,9 @@ void TCPMessengerClient::run(){
         cout << "command ***** >>>> " << command << endl;
         switch (command){
             case SESSION_REFUSED:
+                *(this->game_on) = false;
+                *(this->ref_acc) = SESSION_REFUSED;
+                this->remote_ip = data;
                 break;
             case SUCCESS:
                 this->isConnected = true;

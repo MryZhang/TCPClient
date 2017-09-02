@@ -25,7 +25,7 @@
 #define ROCK                        30
 #define PAPER                       31
 #define SCISSORS                    32
-#define CLOSE_SESSION_WITH_PEER_BROCKER 14
+#define GAME_OVER                   14
 
 
 

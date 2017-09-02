@@ -33,7 +33,7 @@ void UDPGAME::run() {
 
 }
 
-UDPGAME::UDPGAME(string ip , bool * flag ) {
+UDPGAME::UDPGAME(string ip, bool *flag) {
     // init the messenger
     udpSocket = new UDPSocket(GAME_PORT);
     running = flag;
