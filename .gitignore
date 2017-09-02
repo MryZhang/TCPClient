@@ -5,3 +5,4 @@ cmake-build-debug/CMakeFiles/TCPClient.dir/
 cmake-build-debug/TCPClient.cbp
 cmake-build-debug/TCPClient.exe
 cmake-build-debug/gdb.exe.stackdump
+/cmake-build-debug/

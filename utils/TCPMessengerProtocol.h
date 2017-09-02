@@ -26,6 +26,7 @@
 #define PAPER                       31
 #define SCISSORS                    32
 #define GAME_OVER                   14
+#define OPEN_SESSION_WITH_RANDOM_PEER 15
 
 
 
