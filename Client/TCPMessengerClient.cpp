@@ -1,8 +1,6 @@
-//
-// Created by omrih on 21-Jun-17.
-//
+
 #include "TCPMessengerClient.h"
-#include "../utils/TCPMessengerProtocol.h"
+#include "../cmake-build-debug/TCPMessengerProtocol.h"
 
 using namespace npl;
 
@@ -13,7 +11,6 @@ TCPMessengerClient::TCPMessengerClient(bool * game_on, int *ref_acc){
     this->game_on = game_on;
     this->ref_acc = ref_acc;
 }
-
 
 
 void TCPMessengerClient::connect(const string& ip) {
@@ -44,24 +41,20 @@ void TCPMessengerClient::send(int cmd, string msg) {
 void TCPMessengerClient::login_or_register() {
     string msg;
     msg.clear();
-    //selection - 1-login 2-register
-//    cin >> msg;
-    getline(cin,msg);
-    TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
-//    while (!this->isConnected){
-    //username
-//        cin >> msg;
-    msg.clear();
-    getline(cin,msg);
-    TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
-    //password
-//        cin >> msg;
-    msg.clear();
-    getline(cin,msg);
-    TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
-//    }
 
-}
+    getline(cin,msg);
+    TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
+
+    msg.clear();
+    getline(cin,msg);
+    TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
+
+    msg.clear();
+    getline(cin,msg);
+    TCPMessengerProtocol::sendToServer(LOGIN_OR_REGISTER, msg, sock);
+    }
+
+
 
 void TCPMessengerClient::closeSession() {
     cout << "closeSession with server" << endl << flush;
@@ -95,82 +88,6 @@ void TCPMessengerClient::run(){
                 this->remote_ip = data;
                 cout << "game session is pending!" << endl;
                 cout << "data = " << data << endl;
-//                bool running = true;
-//                int local_choose_int = 0;
-//                int remote_choose_int = 0;
-//                string local_choose="0";
-//                string x = "0";
-//                string remote_choose="0";
-//                UDPGAME * udpgame = new UDPGAME(data , &running,&remote_choose);
-//                while (running){
-//                    if (local_choose_int == 0){
-//                        cout<< "1.rock\n2.papre\n3.scissors"<<endl;
-////                        cin >> local_choose;
-////                        cin.clear();
-////                        fflush(stdin);
-////                        local_choose.clear();
-//                        getline(cin,local_choose);
-//                        local_choose_int = stoi(local_choose);
-//                        switch (local_choose_int){
-//                            case 1:
-//                                udpgame->sendTo(to_string(ROCK));
-//                                local_choose_int = ROCK;
-//                                break;
-//                            case 2:
-//                                udpgame->sendTo(to_string(PAPER));
-//                                local_choose_int = PAPER;
-//                                break;
-//                            case 3:
-//                                udpgame->sendTo(to_string(SCISSORS));
-//                                local_choose_int = SCISSORS;
-//                                break;
-//                        }
-//                        //getline(cin,local_choose);
-//                    }
-//                    if (local_choose_int != 0 && udpgame->remote != 0){
-//                        remote_choose_int = udpgame->remote;
-//                        if(local_choose_int == ROCK && remote_choose_int == SCISSORS){
-////                                udpgame->sendTo("you lost!");
-//                            cout<< "you win" << endl;
-//                        }
-//                        else if(local_choose_int == ROCK && remote_choose_int == PAPER){
-////                                udpgame->sendTo("you win!");
-//                            cout<< "you lost" << endl;
-//                        }
-//                        else if(local_choose_int == ROCK && remote_choose_int == ROCK){
-////                                udpgame->sendTo("TIE!");
-//                            cout<< "TIE!" << endl;
-//                        }
-//                        else if(local_choose_int == PAPER && remote_choose_int == ROCK){
-//                            udpgame->sendTo("you lost!");
-//                            cout<< "you win" << endl;
-//                        }
-//                        else if(local_choose_int == PAPER && remote_choose_int == SCISSORS){
-////                                udpgame->sendTo("you win!");
-//                            cout<< "you lost" << endl;
-//                        }
-//                        else if(local_choose_int == PAPER && remote_choose_int == PAPER){
-////                                udpgame->sendTo("TIE!");
-//                            cout<< "TIE!" << endl;
-//                        }
-//                        else if(local_choose_int == SCISSORS && remote_choose_int == ROCK){
-//                            udpgame->sendTo("you win!");
-//                            cout<< "you lost" << endl;
-//                        }
-//                        else if(local_choose_int == SCISSORS && remote_choose_int == PAPER){
-////                                udpgame->sendTo("you lost!");
-//                            cout<< "you win" << endl;
-//                        }
-//                        else if(local_choose_int == SCISSORS && remote_choose_int == SCISSORS){
-////                                udpgame->sendTo("TIE!");
-//                            cout<< "TIE!" << endl;
-//                        }
-//                        local_choose_int = 0;
-//                        remote_choose_int = 0;
-//                        local_choose = "0";
-//                        remote_choose = "0";
-//                    }
-//                }
                 break;
         }
     }
@@ -178,5 +95,4 @@ void TCPMessengerClient::run(){
 }
 
 TCPMessengerClient::~TCPMessengerClient() {
-    // TODO Auto-generated destructor stub
 }

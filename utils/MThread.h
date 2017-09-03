@@ -1,15 +1,9 @@
-//
-// Created by omrih on 21-Jun-17.
-//
-
 #ifndef UNTITLED_MTHREAD_H
 #define UNTITLED_MTHREAD_H
-
 
 #include <pthread.h>
 
 namespace npl{
-
 
     class MThread{
     public:
@@ -24,4 +18,4 @@ namespace npl{
 
 }
 
-#endif //UNTITLED_MTHREAD_H
+#endif

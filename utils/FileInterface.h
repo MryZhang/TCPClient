@@ -1,20 +1,12 @@
-//
-// Created by omrih on 21-Jun-17.
-//
-
 #ifndef UNTITLED_FILEINTERFACE_H
 #define UNTITLED_FILEINTERFACE_H
-
-
 
 #include <iostream>
 #include <string.h>
 #include <pthread.h>
 #include <unistd.h>
 
-
 using namespace std;
-
 
 namespace npl {
 
@@ -30,4 +22,4 @@ namespace npl {
     };
 }
 
-#endif //UNTITLED_FILEINTERFACE_H
+#endif

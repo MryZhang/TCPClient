@@ -1,7 +1,3 @@
-//
-// Created by omrih on 21-Jun-17.
-//
-
 #ifndef UNTITLED_TCPSOCKET_H
 #define UNTITLED_TCPSOCKET_H
 
@@ -25,10 +21,7 @@ using namespace std;
 
 namespace npl{
     class TCPSocket:public Socket {
-
-
         bool isClient;
-
     public:
 
         TCPSocket(int port);
@@ -38,10 +31,10 @@ namespace npl{
         int get_fd();
         virtual ~TCPSocket();
         struct sockaddr_in get_from();
+
     private:
         TCPSocket(struct sockaddr_in from,int connectSock,bool isClient);
-
     };
 }
 
-#endif //UNTITLED_TCPSOCKET_H
+#endif

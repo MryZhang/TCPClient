@@ -1,7 +1,3 @@
-//
-// Created by omrih on 21-Jun-17.
-//
-
 #include "MThread.h"
 #include <iostream>
 #include <stdio.h>

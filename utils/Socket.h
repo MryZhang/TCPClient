@@ -1,7 +1,3 @@
-//
-// Created by omrih on 21-Jun-17.
-//
-
 #ifndef UNTITLED_SOCKET_H
 #define UNTITLED_SOCKET_H
 
@@ -22,8 +18,6 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 
-
-
 using namespace std;
 namespace npl{
     class Socket:public FileInterface{
@@ -40,4 +34,4 @@ namespace npl{
     };
 }
 
-#endif //UNTITLED_SOCKET_H
+#endif

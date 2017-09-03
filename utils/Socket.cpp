@@ -1,17 +1,10 @@
-//
-// Created by omrih on 21-Jun-17.
-//
-
 #include "Socket.h"
-
 
 using namespace npl;
 
 int Socket::bind(int port) {
-
     if (port != 9999) {
         struct sockaddr_in s_in;
-
         // clear the s_in struct
         bzero((char *) &s_in, sizeof(s_in));
 
@@ -23,12 +16,10 @@ int Socket::bind(int port) {
         int rc = ::bind(socket_fd, (struct sockaddr*) &s_in, sizeof(s_in)) < 0;
         if (rc < 0) {
             printf("Error naming channel");
-
         }
         return rc;
     }
     return 0;
-
 }
 
 int Socket::connect(const string& ip, int port) {
@@ -51,29 +42,22 @@ void Socket::close() {
 }
 
 
-/*
- * The method return the IP of the source
- */
+/* The method return the IP of the source*/
 string Socket::fromAddr() {
 
     return inet_ntoa(from.sin_addr);
 
 }
 
-/*
- * The method exit safely
- */
+/*The method exit safely*/
 void Socket::clean_up(int cond, int *sock) {
     printf("Exiting now.\n");
-
     ::close(*sock);
     exit(cond);
 }
 
 Socket::Socket() {
-
 }
 
 Socket::~Socket() {
-    // TODO Auto-generated destructor stub
 }

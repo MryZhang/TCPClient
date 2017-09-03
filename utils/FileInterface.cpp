@@ -1,16 +1,7 @@
-//
-// Created by omrih on 21-Jun-17.
-//
-
 #include "FileInterface.h"
-
 using namespace npl;
 
-
-
-
 FileInterface:: ~FileInterface(){
-
 }
 
 int FileInterface::read(char* buffer, int length){

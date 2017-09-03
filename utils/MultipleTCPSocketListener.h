@@ -1,11 +1,5 @@
-//
-// Created by omrih on 21-Jun-17.
-//
-
 #ifndef UNTITLED_MULTIPLETCPSOCKETLISTENER_H
 #define UNTITLED_MULTIPLETCPSOCKETLISTENER_H
-
-
 
 #include "TCPSocket.h"
 #include <pthread.h>
@@ -31,22 +25,15 @@ namespace npl {
 
     public:
         MultipleTCPSocketListener();
-        /*
-         * add socket to listen
-         */
+        /*add socket to listen*/
         void add(TCPSocket* sock);
-
 
         void add(vector<TCPSocket*> sockVec);
 
-        /*
-         * listen to
-         */
+        /*listen to*/
         TCPSocket* listen(int timeout=0);
 
         virtual ~MultipleTCPSocketListener();
     };
-
 }
-
-#endif //UNTITLED_MULTIPLETCPSOCKETLISTENER_H
+#endif

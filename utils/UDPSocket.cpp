@@ -1,10 +1,3 @@
-/*
- * UDPSocket.cpp
- *
- *  Created on: Feb 8, 2013
- *      Author: Eliav Menachi
- */
-
 #include "UDPSocket.h"
 #include <sys/types.h>
 #include <arpa/inet.h>
@@ -45,10 +38,6 @@ UDPSocket::UDPSocket(int port){
 }
 //recv function to receive the messages from ant client
 int UDPSocket::recv(char* buffer, int length){
-//	printf("UDP server receive ...\n");
-	//ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags,
-	//					struct sockaddr *src_addr, socklen_t *addrlen);
-	//bzero ((char *) &from, sizeof (from));
 	socklen_t fsize = sizeof(from);
 	ssize_t res = recvfrom(socket_fd, buffer, length, 0,(struct sockaddr *)&from,&fsize);
 	if(res<0){
@@ -65,7 +54,6 @@ int UDPSocket::sendTo(const string& msg,const string& ip, int port){
 	s_in.sin_addr.s_addr = inet_addr(ip.c_str());
 	s_in.sin_port = htons(port);
 
-//    cout<< "i'm in sendTo func " << msg << endl;
 	int n = sendto(socket_fd , msg.c_str() , msg.length() , 0 , (struct sockaddr*)&s_in , sizeof(s_in));
     cout << "n = " << n << endl ;
 	if(n<0){
@@ -75,7 +63,6 @@ int UDPSocket::sendTo(const string& msg,const string& ip, int port){
 }
 //reply function to send back the message from the server to the client
 int UDPSocket::reply(const string& msg){
-	//socklen_t fsize = sizeof(from);
 	int n = sendto(socket_fd,msg.data(),msg.length(),0,(struct sockaddr*)&from,sizeof(from));
 	if(n < 0){
 		perror("Reply: error");
@@ -88,9 +75,7 @@ void UDPSocket::close(){
 	shutdown(socket_fd,SHUT_RDWR);
 	::close(socket_fd);
 }
-//fromAddr function to return us the address of the sender
 string UDPSocket::fromAddr(){
-
 	return inet_ntoa(from.sin_addr);
 }
 

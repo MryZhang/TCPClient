@@ -1,20 +1,12 @@
-//
-// Created by omrih on 21-Jun-17.
-//
-
 #include "File.h"
 
 using namespace npl;
 
 File::File(char* path) {
-    // TODO Auto-generated constructor stub
-
     file.open(path, fstream::in | fstream::out | fstream::app);
-
 }
 
 int File::read(char* buffer, int length) {
-
     if (file.is_open())
     {
         length = file.tellg();
@@ -25,7 +17,6 @@ int File::read(char* buffer, int length) {
             file >> buffer;
             cout<<buffer;
         }
-
     }
     puts("\n");
 
@@ -45,5 +36,5 @@ void File::close() {
 }
 
 File::~File() {
-    // TODO Auto-generated destructor stub
+
 }

@@ -1,10 +1,5 @@
-//
-// Created by omrih on 21-Jun-17.
-//
-
 #ifndef UNTITLED_TCPMESSENGERCLIENT_H
 #define UNTITLED_TCPMESSENGERCLIENT_H
-
 
 #include <iostream>
 #include <string.h>
@@ -12,7 +7,7 @@
 #include "../utils/MThread.h"
 #include "../utils/TCPSocket.h"
 #include <unistd.h>
-#include "../utils/TCPMessengerProtocol.h"
+#include "../cmake-build-debug/TCPMessengerProtocol.h"
 #include "../utils/UDPGame.h"
 
 
@@ -37,13 +32,10 @@ namespace npl {
         void closeSession();
         void disconnect();
 
-//	void sendToServer(int command, const string& data,TCPSocket* sock);
-//	void readFromServer(int& command, string& data,TCPSocket* sock);
         void run();
 
         virtual ~TCPMessengerClient();
     };
 
 }
-
-#endif //UNTITLED_TCPMESSENGERCLIENT_H
+#endif

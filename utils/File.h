@@ -1,7 +1,3 @@
-//
-// Created by omrih on 21-Jun-17.
-//
-
 #ifndef UNTITLED_FILE_H
 #define UNTITLED_FILE_H
 
@@ -23,7 +19,6 @@
 #include <arpa/inet.h>
 #include <fstream>
 
-
 using namespace std;
 namespace npl {
 
@@ -37,10 +32,6 @@ namespace npl {
         virtual void close();
         virtual int read(char* buffer, int length);
         virtual int write(const string& msg);
-
     };
-
 }
-
-
-#endif //UNTITLED_FILE_H
+#endif

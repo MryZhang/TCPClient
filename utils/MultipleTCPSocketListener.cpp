@@ -1,25 +1,16 @@
-//
-// Created by omrih on 21-Jun-17.
-//
-
-
 #include "MultipleTCPSocketListener.h"
 
 using namespace npl;
 
 MultipleTCPSocketListener::MultipleTCPSocketListener() {
-
-
 }
 
 void MultipleTCPSocketListener::add(TCPSocket* sock) {
     sockVec.push_back(sock);
-
 }
 
 void MultipleTCPSocketListener::add(vector<TCPSocket*> sockVector) {
     sockVec = sockVector;
-
 }
 
 TCPSocket* MultipleTCPSocketListener::listen(int timeout) {
@@ -54,12 +45,8 @@ TCPSocket* MultipleTCPSocketListener::listen(int timeout) {
             }
         }
     }
-
-
-
     return NULL;
 }
 
 MultipleTCPSocketListener::~MultipleTCPSocketListener() {
-    // TODO Auto-generated destructor stub
 }
