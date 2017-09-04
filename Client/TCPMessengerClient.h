@@ -7,7 +7,7 @@
 #include "../utils/MThread.h"
 #include "../utils/TCPSocket.h"
 #include <unistd.h>
-#include "../cmake-build-debug/TCPMessengerProtocol.h"
+#include "../utils/TCPMessengerProtocol.h"
 #include "../utils/UDPGame.h"
 
 

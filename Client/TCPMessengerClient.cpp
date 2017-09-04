@@ -1,6 +1,6 @@
 
 #include "TCPMessengerClient.h"
-#include "../cmake-build-debug/TCPMessengerProtocol.h"
+#include "../utils/TCPMessengerProtocol.h"
 
 using namespace npl;
 

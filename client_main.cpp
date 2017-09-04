@@ -46,7 +46,7 @@ int main() {
 //            if (msg.size() > 0 && msg[0] == ' ')
 //                msg.erase(0, 1);
 //            client->connect(ip);
-            client->connect("10.0.0.44");
+            client->connect("192.168.1.39");
             client->login_or_register();
 //            printInstructions();
         } else if ((command == "y" && game_on == true) || (is_o_pressed && game_on)) {
