@@ -23,6 +23,6 @@ set(SOURCE_FILES
         utils/UDPGame.h
         utils/UDPSocket.cpp
         utils/UDPSocket.h
-        client_main.cpp)
+        client_main.cpp utils/TCPMessengerProtocol.h)
 
 add_executable(TCPClient ${SOURCE_FILES})
