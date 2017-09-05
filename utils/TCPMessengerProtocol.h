@@ -66,7 +66,7 @@ namespace npl {
             sock->read(buff, len);
             buff[len] = '\0';
             data = buff;
-            cout << data << endl;
+//            cout << data << endl;
         }
     };
 }

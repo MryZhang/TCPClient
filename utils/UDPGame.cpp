@@ -30,12 +30,10 @@ UDPGAME::UDPGAME(string ip, bool *flag) {
     udpSocket = new UDPSocket(GAME_PORT);
     running = flag;
     sendtoip = ip;
-    cout << "remote ip IN UDP : " << ip << endl;
     this->start();
 }
 
 void UDPGAME::sendTo(const string& msg) {
-    cout << "sending " << msg << endl;
     udpSocket->sendTo(msg, sendtoip, GAME_PORT);
     if (msg.compare("xxx") == 0){
         close();

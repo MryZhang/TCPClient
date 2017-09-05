@@ -29,12 +29,10 @@ void TCPMessengerClient::openSession(const string& username) {
 
 }
 void TCPMessengerClient::send(const string msg) {
-    cout << "sending msg to server" << msg << endl << flush;
     TCPMessengerProtocol::sendToServer(SEND_MSG_TO_PEER, msg, sock);
 }
 
 void TCPMessengerClient::send(int cmd, string msg) {
-    cout << "sending message cmd = "<< cmd << endl << flush;
     TCPMessengerProtocol::sendToServer(cmd, msg, sock);
 }
 
@@ -73,7 +71,6 @@ void TCPMessengerClient::run(){
     stopRun = true;
     while(stopRun){
         TCPMessengerProtocol::readFromServer(command,data,sock);
-        cout << "command ***** >>>> " << command << endl;
         switch (command){
             case SESSION_REFUSED:
                 *(this->game_on) = false;
@@ -86,8 +83,7 @@ void TCPMessengerClient::run(){
             case GAME_SESSION:
                 *(this->game_on) = true;
                 this->remote_ip = data;
-                cout << "game session is pending!" << endl;
-                cout << "data = " << data << endl;
+                cout << "game session is pending! press Y or N to accept or reject" << endl;
                 break;
         }
     }

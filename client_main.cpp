@@ -40,13 +40,13 @@ int main() {
 //        cin >> command;
 
         if (command == "c") {
-//            string ip;
-//            cin >> ip;
-//            getline(std::cin, msg);
-//            if (msg.size() > 0 && msg[0] == ' ')
-//                msg.erase(0, 1);
-//            client->connect(ip);
-            client->connect("192.168.1.39");
+            string ip;
+            cin >> ip;
+            getline(std::cin, msg);
+            if (msg.size() > 0 && msg[0] == ' ')
+                msg.erase(0, 1);
+            client->connect(ip);
+//            client->connect("192.168.1.39");
             client->login_or_register();
 //            printInstructions();
         } else if ((command == "y" && game_on == true) || (is_o_pressed && game_on)) {
@@ -58,18 +58,12 @@ int main() {
             string remote_choose="0";
             int score = 0;
             int loosing_score =0;
-//            cout << "IN MAIN remote ip : " << client->remote_ip << endl;
-            cout << ">>> waiting for the ip" << endl;
             while (client->remote_ip.compare("") == 0){}
             if (client->remote_ip.compare("n") != 0){
                 UDPGAME * udpgame = new UDPGAME(client->remote_ip, &running);
                 while (score < 3 && loosing_score < 3){
                     if (local_choose_int == 0){
                         cout<< "1.rock\n2.papre\n3.scissors"<<endl;
-//                        cin >> local_choose;
-//                        cin.clear();
-//                        fflush(stdin);
-//                        local_choose.clear();
                         getline(cin,local_choose);
                         local_choose_int = stoi(local_choose);
                         switch (local_choose_int){
@@ -86,7 +80,6 @@ int main() {
                                 local_choose_int = SCISSORS;
                                 break;
                         }
-                        //getline(cin,local_choose);
                     }
                     if (local_choose_int != 0 && udpgame->remote != 0){
                         remote_choose_int = udpgame->remote;
@@ -152,9 +145,7 @@ int main() {
             string username;
             username.clear();
             getline(cin,username);
-//            cin >> username;
             client->openSession(username);
-//            username.clear();
         } else if (command == "s") {
             getline(cin, msg);
             if (msg.size() > 0 && msg[0] == ' ')
@@ -173,8 +164,6 @@ int main() {
             printInstructions();
         }
     }
-    //client->close();
-    //delete client;
     cout << "messenger was closed" << endl;
     return 0;
 }

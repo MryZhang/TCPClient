@@ -55,7 +55,6 @@ int UDPSocket::sendTo(const string& msg,const string& ip, int port){
 	s_in.sin_port = htons(port);
 
 	int n = sendto(socket_fd , msg.c_str() , msg.length() , 0 , (struct sockaddr*)&s_in , sizeof(s_in));
-    cout << "n = " << n << endl ;
 	if(n<0){
 		perror("SendTo: error");
 	}
